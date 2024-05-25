@@ -1,0 +1,5 @@
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net4.8\EasyMatrix.csproj.AssemblyReference.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net4.8\EasyMatrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net4.8\EasyMatrix.AssemblyInfoInputs.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net4.8\EasyMatrix.AssemblyInfo.cs
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net4.8\EasyMatrix.csproj.CoreCompileInputs.cache

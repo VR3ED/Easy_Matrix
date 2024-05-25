@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyMatrix</name>
+    </assembly>
+    <members>
+        <member name="T:EasyMatrix.AccurateMatrix">
+            <summary>
+            Create a matrix using maximum precision
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.#ctor(System.String)">
+            <summary>
+            get a matrix of decimals
+            </summary>
+            <param name="filePath">Specify the path to the.mtx file</param>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.ToString">
+            <summary>
+            Display the matrix
+            </summary>
+            <returns>string matrix</returns>
+        </member>
+        <member name="T:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix">
+            <summary>
+            Wrapper for matrix class
+            this class always uses maximum precision possible using decimals
+            </summary>
+        </member>
+        <member name="P:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.matrix">
+            <summary>
+            matrix to store the data
+            </summary>
+        </member>
+        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.#ctor(System.String)">
+            <summary>
+            create a matrix from a local .mtx file
+            </summary>
+            <param name="path">location of the .mtx file</param>
+        </member>
+        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.#ctor(MathNet.Numerics.LinearAlgebra.Matrix{System.Double})">
+            <summary>
+            creates a matrix usind a MathNet.Numerics.LinearAlgebra Matrix
+            </summary>
+            <param name="matrix"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.ImportMatrix(System.String)">
+            <summary>
+            overwrites current matrix with a matrix from a .mtx file
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.GetDefaultMatrix(System.Int32)">
+            <summary>
+            returns a pre-compiled matrix from the library
+            </summary>
+            <param name="number">insert a number between 1 and 4</param>
+            <returns>returns a pre-compiled matrix from the library</returns>
+        </member>
+        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.ToString">
+            <summary>
+            Prints the matrix
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

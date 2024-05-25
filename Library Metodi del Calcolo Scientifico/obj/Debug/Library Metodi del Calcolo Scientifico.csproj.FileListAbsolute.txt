@@ -1,0 +1,7 @@
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\obj\Debug\Library Metodi del Calcolo Scientifico.csproj.AssemblyReference.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\obj\Debug\Library Metodi del Calcolo Scientifico.csproj.CoreCompileInputs.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\bin\Debug\Library Metodi del Calcolo Scientifico.exe.config
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\bin\Debug\Library Metodi del Calcolo Scientifico.exe
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\bin\Debug\Library Metodi del Calcolo Scientifico.pdb
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\obj\Debug\Library Metodi del Calcolo Scientifico.exe
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\Library Metodi del Calcolo Scientifico\obj\Debug\Library Metodi del Calcolo Scientifico.pdb
