@@ -7,24 +7,28 @@
       "RelativeMoniker": "D:0:0:{3E94B0BD-0226-4502-959D-67C45504094D}|LibraryTesting\\LibraryTesting.csproj|solutionrelative:librarytesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\wrapmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\wrapmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\matrixes\\spa1.mtx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\matrixes\\spa1.mtx||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\matrixes\\spa3.mtx||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\matrixes\\spa3.mtx||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\matrixes\\spa2.mtx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\matrixes\\spa2.mtx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\accuratematrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\accuratematrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\matrixes\\spa1.mtx||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\matrixes\\spa1.mtx||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\amatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\amatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\matrixes\\spa2.mtx||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\matrixes\\spa2.mtx||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\wrapmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\wrapmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,33 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AccurateMatrix.cs",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AccurateMatrix.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\AccurateMatrix.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AccurateMatrix.cs",
               "RelativeToolTip": "EasyMatrix\\AccurateMatrix.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAcwDsAAAAxAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T20:33:08.691Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "WrapMatrix.cs",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\WrapMatrix.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\WrapMatrix.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\WrapMatrix.cs",
               "RelativeToolTip": "EasyMatrix\\WrapMatrix.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAwwGIAAAAJAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T17:55:34.913Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AMatrix.cs",
+              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AMatrix.cs",
+              "RelativeDocumentMoniker": "EasyMatrix\\AMatrix.cs",
+              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AMatrix.cs",
+              "RelativeToolTip": "EasyMatrix\\AMatrix.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T10:03:58.257Z"
             },
             {
               "$type": "Document",
@@ -70,25 +91,27 @@
               "RelativeDocumentMoniker": "EasyMatrix\\Matrixes\\spa3.mtx",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\Matrixes\\spa3.mtx",
               "RelativeToolTip": "EasyMatrix\\Matrixes\\spa3.mtx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001794|",
-              "WhenOpened": "2024-05-25T23:19:38.204Z"
+              "WhenOpened": "2024-05-25T23:19:38.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "spa1.mtx",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\Matrixes\\spa1.mtx",
               "RelativeDocumentMoniker": "EasyMatrix\\Matrixes\\spa1.mtx",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\Matrixes\\spa1.mtx",
               "RelativeToolTip": "EasyMatrix\\Matrixes\\spa1.mtx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "ViewState": "AQIAAGjIAgAAAAAAAAAAAKTIAgAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001794|",
-              "WhenOpened": "2024-05-25T23:05:35.606Z"
+              "WhenOpened": "2024-05-25T23:05:35.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "spa2.mtx",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\Matrixes\\spa2.mtx",
               "RelativeDocumentMoniker": "EasyMatrix\\Matrixes\\spa2.mtx",
@@ -96,7 +119,8 @@
               "RelativeToolTip": "EasyMatrix\\Matrixes\\spa2.mtx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001794|",
-              "WhenOpened": "2024-05-25T20:46:49.95Z"
+              "WhenOpened": "2024-05-25T20:46:49.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

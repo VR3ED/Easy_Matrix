@@ -12,3 +12,4 @@ C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatr
 C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\ref\EasyMatrix.dll
 C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\Debug\net8.0\EasyMatrix.xml
 C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.xml
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.sourcelink.json

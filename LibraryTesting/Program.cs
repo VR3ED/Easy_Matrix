@@ -6,6 +6,6 @@ using EasyMatrix;
 
 //WrapMatrix wrapMatrix2 = WrapMatrix.GetDefaultMatrix(1);
 
-AccurateMatrix accurateMatrix = new AccurateMatrix(@"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx");
+AccurateMatrix accurateMatrix = new AccurateMatrix(@"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa3.mtx");
 
 Console.WriteLine(accurateMatrix);

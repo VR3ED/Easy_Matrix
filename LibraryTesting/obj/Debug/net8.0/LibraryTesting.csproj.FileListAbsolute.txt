@@ -19,3 +19,4 @@ C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryT
 C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.pdb
 C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.genruntimeconfig.cache
 C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\ref\LibraryTesting.dll
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.sourcelink.json
