@@ -44,6 +44,28 @@
             Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
             </summary>
         </member>
+        <member name="T:EasyMatrix.GaussSeidelSolver">
+            <summary>
+            Implements Gauss-Seidel. It immediately uses the new calculated values ​​of the solution vector elements during iteration
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.GaussSeidelSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            constructor method
+            </summary>
+            <param name="A">Matrix to solve</param>
+            <param name="b">Solutions vectors</param>
+            <param name="tol"></param>
+            <param name="maxIter"></param>
+        </member>
+        <member name="M:EasyMatrix.GaussSeidelSolver.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            implements jacobi formula
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">x vector</param>
+            <returns></returns>
+        </member>
         <member name="T:EasyMatrix.IterativeSolver">
             <summary>
             Abstract class that defines an iterative solver with an abstract Solve method and helper methods such as Norm
@@ -74,8 +96,30 @@
         </member>
         <member name="T:EasyMatrix.JacobiSolver">
             <summary>
-            Implement Jacobi's method. Uses an iteration vector and a prior vector to compute the approximate solution iteratively.
+            Implement Jacobi's method. Uses an iteration vector and a prior iteration vector to compute the approximate solution iteratively.
             </summary>
+        </member>
+        <member name="F:EasyMatrix.JacobiSolver.xOld">
+            <summary>
+            static variable that memorizes xOld for each iteration
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.JacobiSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            constructor method, setups xOld
+            </summary>
+            <param name="A">Matrix to solve</param>
+            <param name="b">Solutions vectors</param>
+            <param name="tol"></param>
+            <param name="maxIter"></param>
+        </member>
+        <member name="M:EasyMatrix.JacobiSolver.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            implements jacobi formula
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">x vector</param>
+            <returns></returns>
         </member>
         <member name="T:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix">
             <summary>

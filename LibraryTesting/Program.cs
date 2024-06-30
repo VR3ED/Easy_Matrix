@@ -4,10 +4,10 @@ using EasyMatrix;
 using Library_Metodi_del_Calcolo_Scientifico;
 
 
-WrapMatrix wrapMatrix = new WrapMatrix(@"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx");
-Console.WriteLine(wrapMatrix);
-Console.ReadKey();
-Console.Clear();
+//WrapMatrix wrapMatrix = new WrapMatrix(@"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx");
+//Console.WriteLine(wrapMatrix);
+//Console.ReadKey();
+//Console.Clear();
 
 //var x = wrapMatrix.matrix.Cholesky();
 //Console.WriteLine(x);
@@ -28,7 +28,7 @@ b = Enumerable.Repeat(1.0m, A.columns).ToArray(); // inserimento di soli 1 all'i
 
 
 decimal[] result = [];
-IterativeSolver solver = new JacobiSolver(A, b, tol[0], maxIter);
+IterativeSolver solver = new GaussSeidelSolver(A, b, tol[3], maxIter);
 result = solver.Solve();
 
 Console.WriteLine("Solution:");

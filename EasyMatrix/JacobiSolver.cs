@@ -7,49 +7,34 @@ using System.Threading.Tasks;
 namespace EasyMatrix
 {
     /// <summary>
-    /// Implement Jacobi's method. Uses an iteration vector and a prior vector to compute the approximate solution iteratively.
+    /// Implement Jacobi's method. Uses an iteration vector and a prior iteration vector to compute the approximate solution iteratively.
     /// </summary>
     public class JacobiSolver : IterativeSolver
     {
 
+        /// <summary>
+        /// static variable that memorizes xOld for each iteration
+        /// </summary>
         private static decimal[] xOld;
 
+        /// <summary>
+        /// constructor method, setups xOld
+        /// </summary>
+        /// <param name="A">Matrix to solve</param>
+        /// <param name="b">Solutions vectors</param>
+        /// <param name="tol"></param>
+        /// <param name="maxIter"></param>
         public JacobiSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) 
         {
             xOld = new decimal[A.columns];
         }
 
-
-        //public override decimal[] Solve()
-        //{
-        //    int n = A.rows;
-        //    decimal[] x = new decimal[n]; //vettore delle soluzioni --> inizializzato a zero
-        //    decimal[] xOld = new decimal[n];
-
-        //    for (int k = 0; k < maxIter; k++)
-        //    {
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            decimal sigma = 0;
-        //            for (int j = 0; j < n; j++)
-        //            {
-        //                if (j != i)
-        //                    sigma += A.matrix[i, j] * xOld[j];
-        //            }
-
-        //            //formula per calcolo di jacobi
-        //            x[i] = (b[i] - sigma) / A.matrix[i, i];
-        //        }
-
-        //        if (NormAxMinusB(x) < tol)
-        //            return x;
-
-        //        Array.Copy(x, xOld, n);
-        //    }
-        //    throw new Exception("Jacobi method did not converge.");
-        //}
-        
-
+        /// <summary>
+        /// implements jacobi formula
+        /// </summary>
+        /// <param name="i">current iteration index</param>
+        /// <param name="x">x vector</param>
+        /// <returns></returns>
         public override decimal[] SolverLogic(int i, decimal[] x)
         {
             #region init vector x and xOld
@@ -68,6 +53,7 @@ namespace EasyMatrix
             for (int j = 0; j < base.A.rows; j++)
             {
                 if (j != i)
+                    //sommatoria di tutte le A[i,j] * x_j^k
                     sigma += A.matrix[i, j] * xOld[j];
             }
 
