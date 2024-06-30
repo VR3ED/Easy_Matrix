@@ -9,17 +9,73 @@
             Create a matrix using maximum precision
             </summary>
         </member>
+        <member name="F:EasyMatrix.AccurateMatrix.chunk_load">
+            <summary>
+            number of chunks to be read at a time when reading a file
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.InitializeMatrix(System.Decimal[0:,0:])">
+            <summary>
+            initialize the matrix 
+            </summary>
+            <param name="values"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.#ctor(System.Int32)">
+            <summary>
+            initialize the matrix as an all 0 matrix
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.IsSymmetricPositiveDefinite">
+            <summary>
+            check if the matrix is both positive and symmetric
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:EasyMatrix.AccurateMatrix.#ctor(System.String)">
             <summary>
             get a matrix of decimals
             </summary>
             <param name="filePath">Specify the path to the.mtx file</param>
         </member>
-        <member name="M:EasyMatrix.AccurateMatrix.ToString">
+        <member name="T:EasyMatrix.AMatrix">
             <summary>
-            Display the matrix
+            Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
             </summary>
-            <returns>string matrix</returns>
+        </member>
+        <member name="T:EasyMatrix.IterativeSolver">
+            <summary>
+            Abstract class that defines an iterative solver with an abstract Solve method and helper methods such as Norm
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.Sqrt(System.Decimal,System.Decimal)">
+            <summary>
+            compute the square root of a number
+            </summary>
+            <param name="x">value to calculate the quale root of</param>
+            <param name="epsilon">an accuracy of calculation of the root from our number.</param>
+            <returns></returns>
+            <exception cref="T:System.OverflowException"></exception>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.Norm(System.Decimal[])">
+            <summary>
+            compute the normalization value of an array 
+            </summary>
+            <param name="vec">vector to compute the normalization</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.NormAxMinusB(System.Decimal[])">
+            <summary>
+            compute actual tollerance
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyMatrix.JacobiSolver">
+            <summary>
+            Implement Jacobi's method. Uses an iteration vector and a prior vector to compute the approximate solution iteratively.
+            </summary>
         </member>
         <member name="T:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix">
             <summary>

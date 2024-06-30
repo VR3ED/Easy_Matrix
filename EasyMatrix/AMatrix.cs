@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace EasyMatrix
 {
-    public  abstract class AMatrix
+    /// <summary>
+    /// Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
+    /// </summary>
+    public abstract class AMatrix
     {
         internal decimal[,] matrix { get; set; }
         public int rows { get; set; }
         public int columns { get; set; }
         public int number_of_valorized { get; set; }
+
+
+        public abstract void InitializeMatrix(decimal[,] values);
     }
 }

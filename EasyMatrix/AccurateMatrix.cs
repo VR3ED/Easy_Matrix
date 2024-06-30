@@ -17,8 +17,79 @@ namespace EasyMatrix
     /// </summary>
     public class AccurateMatrix : AMatrix
     {
-
+        /// <summary>
+        /// number of chunks to be read at a time when reading a file
+        /// </summary>
         private int chunk_load = 500;
+
+        /// <summary>
+        /// initialize the matrix 
+        /// </summary>
+        /// <param name="values"></param>
+        /// <exception cref="ArgumentException"></exception>
+        public override void InitializeMatrix(decimal[,] values)
+        {
+            if (values.GetLength(0) != rows || values.GetLength(1) != columns)
+                throw new ArgumentException("Matrix dimensions do not match.");
+
+            // Check for symmetric and positive definiteness
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (values[i, j] != values[j, i])
+                        throw new ArgumentException("Matrix is not symmetric.");
+                }
+            }
+
+            matrix = values;
+            number_of_valorized = rows * columns;
+        }
+
+
+        /// <summary>
+        /// initialize the matrix as an all 0 matrix
+        /// </summary>
+        /// <param name="size"></param>
+        public AccurateMatrix(int size)
+        {
+            rows = size;
+            columns = size;
+            matrix = new decimal[size, size];
+        }
+
+
+        /// <summary>
+        /// check if the matrix is both positive and symmetric
+        /// </summary>
+        /// <returns></returns>
+        public bool IsSymmetricPositiveDefinite()
+        {
+            // Check for symmetry
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (matrix[i, j] != matrix[j, i])
+                        return false;
+                }
+            }
+
+            // Check for positive definiteness using the Cholesky decomposition
+            for (int i = 0; i < rows; i++)
+            {
+                decimal sum = 0;
+                for (int k = 0; k < i; k++)
+                {
+                    sum += matrix[i, k] * matrix[i, k];
+                }
+                if (matrix[i, i] - sum <= 0)
+                    return false;
+            }
+
+            return true;
+        }
+
 
         /// <summary>
         /// get a matrix of decimals
@@ -78,47 +149,47 @@ namespace EasyMatrix
         /// Display the matrix
         /// </summary>
         /// <returns>string matrix</returns>
-        public override string ToString()
-        {
-            // Determine number of threads to use
-            int threadCount = Math.Max(1, rows*columns / chunk_load);
+        //public override string ToString()
+        //{
+        //    // Determine number of threads to use
+        //    int threadCount = Math.Max(1, rows*columns / chunk_load);
 
-            // Split the work among the threads
-            int chunkSize = rows*columns / threadCount;
-            var tasks = new Task<string>[threadCount];
-            var stringBuilders = new StringBuilder[threadCount];
+        //    // Split the work among the threads
+        //    int chunkSize = rows*columns / threadCount;
+        //    var tasks = new Task<string>[threadCount];
+        //    var stringBuilders = new StringBuilder[threadCount];
 
-            for (int t = 0; t < threadCount; t++)
-            {
-                int start = t * chunkSize;
-                //int end = (t == threadCount - 1) ? rows : start + chunkSize;
-                stringBuilders[t] = new StringBuilder();
+        //    for (int t = 0; t < threadCount; t++)
+        //    {
+        //        int start = t * chunkSize;
+        //        //int end = (t == threadCount - 1) ? rows : start + chunkSize;
+        //        stringBuilders[t] = new StringBuilder();
 
-                tasks[t] = Task.Run(() =>
-                {
-                    var sb = stringBuilders[t-1];
-                    for (int i = start; i < rows; i++)
-                    {
-                        for (int j = 0; j < columns; j++)
-                        {
-                            sb.Append(base.matrix[i, j].ToString("G29")).Append(' ');
-                        }
-                        sb.AppendLine();
-                    }
-                    return sb.ToString();
-                });
-            }
+        //        tasks[t] = Task.Run(() =>
+        //        {
+        //            var sb = stringBuilders[t-1];
+        //            for (int i = start; i < rows; i++)
+        //            {
+        //                for (int j = 0; j < columns; j++)
+        //                {
+        //                    sb.Append(base.matrix[i, j].ToString("G29")).Append(' ');
+        //                }
+        //                sb.AppendLine();
+        //            }
+        //            return sb.ToString();
+        //        });
+        //    }
 
-            // Wait for all tasks to complete and concatenate the results
-            Task.WaitAll(tasks);
-            var result = new StringBuilder();
-            foreach (var task in tasks)
-            {
-                result.Append(task.Result);
-            }
+        //    // Wait for all tasks to complete and concatenate the results
+        //    Task.WaitAll(tasks);
+        //    var result = new StringBuilder();
+        //    foreach (var task in tasks)
+        //    {
+        //        result.Append(task.Result);
+        //    }
 
-            return result.ToString();
-        }
+        //    return result.ToString();
+        //}
 
     }
 }
