@@ -11,11 +11,34 @@ namespace EasyMatrix
     /// </summary>
     public abstract class IterativeSolver
     {
+        /// <summary>
+        /// Decimals matrix
+        /// </summary>
         protected AccurateMatrix A;
+
+        /// <summary>
+        /// vecror of known terms
+        /// </summary>
         protected decimal[] b;
+
+        /// <summary>
+        /// tollerance index. Up to 28-29 digits precision
+        /// </summary>
         protected decimal tol;
+
+        /// <summary>
+        /// maximun number of iterations required
+        /// </summary>
         protected int maxIter;
 
+
+        /// <summary>
+        /// Constructor common for all Iterative Solvers
+        /// </summary>
+        /// <param name="A">Decimals matrix</param>
+        /// <param name="b">vecror of known terms</param>
+        /// <param name="tol">tollerance index. Up to 28-29 digits precision</param>
+        /// <param name="maxIter">maximun number of iterations required</param>
         public IterativeSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter)
         {
             this.A = A;
@@ -24,8 +47,15 @@ namespace EasyMatrix
             this.maxIter = maxIter;
         }
 
-        //public abstract decimal[] Solve();
-
+        
+        /// <summary>
+        /// Solve method that implents the basics of each solver we will implement from this class
+        /// Each Solver will have a differnt implementation of SolverLogic
+        /// This means that all Solvers will run this code below to scroll through the matrix,
+        /// But only the relative solver logic to the actual solver will get applied
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public decimal[] Solve()
         {
             int n = A.rows;
@@ -38,13 +68,28 @@ namespace EasyMatrix
                     x = SolverLogic(i, x);
                 }
 
-                if (NormAxMinusB(x) < tol)
+                if (SolverExitCondition(x))
                     return x;
+
             }
             throw new Exception("Iterative method did not converge.");
         }
 
+        /// <summary>
+        /// abstrac method, each solver implements a differnt so
+        /// </summary>
+        /// <param name="i">current iteration index</param>
+        /// <param name="x">previuously calculated solution from previous iteration</param>
+        /// <returns></returns>
         public abstract decimal[] SolverLogic(int i, decimal[] x);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i">current iteration</param>
+        /// <param name="x">solu</param>
+        /// <returns></returns>
+        public abstract bool SolverExitCondition(decimal[] x);
 
         #region ELEMENTAL OPERATIONS
 

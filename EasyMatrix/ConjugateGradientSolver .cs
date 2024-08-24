@@ -53,6 +53,14 @@ namespace EasyMatrix
             throw new NotImplementedException();
         }
 
+        public override bool SolverExitCondition(decimal[] x)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        #region ELEMENTAL OPERATIONS
+
         private decimal[] MatrixVectorMultiply(decimal[] vector)
         {
             decimal[] result = new decimal[A.rows];
@@ -75,5 +83,8 @@ namespace EasyMatrix
             }
             return sum;
         }
+
+        #endregion
+
     }
 }

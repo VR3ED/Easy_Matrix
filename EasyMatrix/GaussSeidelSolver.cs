@@ -24,7 +24,7 @@ namespace EasyMatrix
 
 
         /// <summary>
-        /// implements jacobi formula
+        /// implements gauss siedel formula
         /// </summary>
         /// <param name="i">current iteration index</param>
         /// <param name="x">x vector</param>
@@ -44,6 +44,15 @@ namespace EasyMatrix
             return x;
         }
 
+        /// <summary>
+        /// check if current solver arrived at an acceptable solution
+        /// </summary>
+        /// <param name="x">current solutions vector</param>
+        /// <returns></returns>
+        public override bool SolverExitCondition(decimal[] x)
+        {
+            return NormAxMinusB(x) < tol;
+        }
 
     }
 }

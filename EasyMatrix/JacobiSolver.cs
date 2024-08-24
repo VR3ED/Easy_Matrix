@@ -68,5 +68,16 @@ namespace EasyMatrix
 
             return x;
         }
+
+
+        /// <summary>
+        /// check if current solver arrived at an acceptable solution
+        /// </summary>
+        /// <param name="x">current solutions vector</param>
+        /// <returns></returns>
+        public override bool SolverExitCondition(decimal[] x)
+        {
+            return NormAxMinusB(x) < tol;
+        }
     }
 }

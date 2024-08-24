@@ -16,7 +16,7 @@ using Library_Metodi_del_Calcolo_Scientifico;
 
 
 decimal[] tol = [0.0001m, 0.000001m, 0.00000001m, 0.0000000001m];
-int maxIter = 50000;
+int maxIter = 10000;
 
 AccurateMatrix A = new AccurateMatrix(@"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx");
 Console.WriteLine(A.IsSymmetricPositiveDefinite());
@@ -28,7 +28,7 @@ b = Enumerable.Repeat(1.0m, A.columns).ToArray(); // inserimento di soli 1 all'i
 
 
 decimal[] result = [];
-IterativeSolver solver = new GaussSeidelSolver(A, b, tol[3], maxIter);
+GradientSolver solver = new GradientSolver(A, b, tol[3], maxIter);
 result = solver.Solve();
 
 Console.WriteLine("Solution:");
