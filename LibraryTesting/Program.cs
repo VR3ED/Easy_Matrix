@@ -1,12 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using EasyMatrix;
-
+using System.Runtime.InteropServices;
 
 decimal[] tol = [0.0001m, 0.000001m, 0.00000001m, 0.0000000001m, 0.00000000000001m];
 int maxIter = 50000;
 
-AccurateMatrix A = new AccurateMatrix(@"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx");
+
+string file_path = "";
+
+if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+{
+    file_path = @"\home\Cava\Documents\Repos\C#\Easy_Matrix\EasyMatrix\Matrixes\spa1.mtx";
+}
+else
+{
+    file_path = @"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx";
+}
+
+AccurateMatrix A = new AccurateMatrix(file_path);
+
 //Console.WriteLine(A.IsSymmetricPositiveDefinite());
 //Console.ReadKey();
 //Console.Clear();
