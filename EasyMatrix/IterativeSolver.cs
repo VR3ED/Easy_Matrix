@@ -75,10 +75,12 @@ namespace EasyMatrix
                 if (SolverExitCondition(x))
                 {
                     stopwatch.Stop();
-                    LogResults(tol, k, stopwatch.Elapsed);
+                    LogResults(true, tol, k, stopwatch.Elapsed);
                     return x;
                 }
             }
+
+            LogResults(false, tol, maxIter, stopwatch.Elapsed);
             throw new Exception("Iterative method did not converge.");
         }
 
@@ -102,10 +104,11 @@ namespace EasyMatrix
         /// <summary>
         /// Logs the result of the iterator
         /// </summary>
+        /// <param name="converge"></param>
         /// <param name="tolerance"></param>
         /// <param name="iterations"></param>
         /// <param name="timeSpent"></param>
-        protected void LogResults(decimal tolerance, int iterations, TimeSpan timeSpent)
+        protected void LogResults(bool converge, decimal tolerance, int iterations, TimeSpan timeSpent)
         {
             string filePath = "results.csv";
             bool fileExists = File.Exists(filePath);
@@ -115,13 +118,13 @@ namespace EasyMatrix
                 // If file does not exist, write the header
                 if (!fileExists)
                 {
-                    writer.WriteLine("SolverType,PrecisionRequired,Iterations,TimeSpent(ms)");
+                    writer.WriteLine("Matrix,Convergence,SolverType,PrecisionRequired,Iterations,TimeSpent(ms)");
                 }
 
                 string solverType = this.GetType().Name;
 
                 // Write the data
-                writer.WriteLine($"{solverType},{tolerance},{iterations},{timeSpent.TotalMilliseconds}");
+                writer.WriteLine($"{A.matrix_name},{converge},{solverType},{tolerance},{iterations},{timeSpent.TotalMilliseconds}");
             }
         }
 

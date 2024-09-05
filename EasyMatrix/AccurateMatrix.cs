@@ -97,6 +97,9 @@ namespace EasyMatrix
         /// <param name="filePath">Specify the path to the.mtx file</param>
         public AccurateMatrix (string filePath)
         {
+            //setup matrix name
+            this.matrix_name = filePath.Split('\\').Last();
+
             // Read all lines from the file
             string[] lines = File.ReadAllLines(filePath);
 
@@ -149,47 +152,47 @@ namespace EasyMatrix
         /// Display the matrix
         /// </summary>
         /// <returns>string matrix</returns>
-        //public override string ToString()
-        //{
-        //    // Determine number of threads to use
-        //    int threadCount = Math.Max(1, rows*columns / chunk_load);
+        public override string ToString()
+        {
+            // Determine number of threads to use
+            int threadCount = Math.Max(1, rows * columns / chunk_load);
 
-        //    // Split the work among the threads
-        //    int chunkSize = rows*columns / threadCount;
-        //    var tasks = new Task<string>[threadCount];
-        //    var stringBuilders = new StringBuilder[threadCount];
+            // Split the work among the threads
+            int chunkSize = rows * columns / threadCount;
+            var tasks = new Task<string>[threadCount];
+            var stringBuilders = new StringBuilder[threadCount];
 
-        //    for (int t = 0; t < threadCount; t++)
-        //    {
-        //        int start = t * chunkSize;
-        //        //int end = (t == threadCount - 1) ? rows : start + chunkSize;
-        //        stringBuilders[t] = new StringBuilder();
+            for (int t = 0; t < threadCount; t++)
+            {
+                int start = t * chunkSize;
+                //int end = (t == threadCount - 1) ? rows : start + chunkSize;
+                stringBuilders[t] = new StringBuilder();
 
-        //        tasks[t] = Task.Run(() =>
-        //        {
-        //            var sb = stringBuilders[t-1];
-        //            for (int i = start; i < rows; i++)
-        //            {
-        //                for (int j = 0; j < columns; j++)
-        //                {
-        //                    sb.Append(base.matrix[i, j].ToString("G29")).Append(' ');
-        //                }
-        //                sb.AppendLine();
-        //            }
-        //            return sb.ToString();
-        //        });
-        //    }
+                tasks[t] = Task.Run(() =>
+                {
+                    var sb = stringBuilders[t - 1];
+                    for (int i = start; i < rows; i++)
+                    {
+                        for (int j = 0; j < columns; j++)
+                        {
+                            sb.Append(base.matrix[i, j].ToString("G29")).Append(' ');
+                        }
+                        sb.AppendLine();
+                    }
+                    return sb.ToString();
+                });
+            }
 
-        //    // Wait for all tasks to complete and concatenate the results
-        //    Task.WaitAll(tasks);
-        //    var result = new StringBuilder();
-        //    foreach (var task in tasks)
-        //    {
-        //        result.Append(task.Result);
-        //    }
+            // Wait for all tasks to complete and concatenate the results
+            Task.WaitAll(tasks);
+            var result = new StringBuilder();
+            foreach (var task in tasks)
+            {
+                result.Append(task.Result);
+            }
 
-        //    return result.ToString();
-        //}
+            return result.ToString();
+        }
 
     }
 }

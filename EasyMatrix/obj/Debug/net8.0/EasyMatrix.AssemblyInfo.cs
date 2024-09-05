@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A simple package to operate with matrixes in a simple way. ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bf8d616dcd4ba88e8ffddb1004d4bf499f3f192")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8a279c3f5fa49fb178563f6c214e36abe6449b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyMatrix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyMatrix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

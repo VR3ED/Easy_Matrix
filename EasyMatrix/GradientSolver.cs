@@ -103,6 +103,8 @@ namespace EasyMatrix
             return Norm(r) / Norm(b) < tol;
         }
 
+
+
         #region ELEMENTAL OPERATIONS
 
         private decimal[] MatrixVectorMultiply(decimal[] vector)

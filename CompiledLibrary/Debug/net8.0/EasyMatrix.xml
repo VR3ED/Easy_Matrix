@@ -39,6 +39,12 @@
             </summary>
             <param name="filePath">Specify the path to the.mtx file</param>
         </member>
+        <member name="M:EasyMatrix.AccurateMatrix.ToString">
+            <summary>
+            Display the matrix
+            </summary>
+            <returns>string matrix</returns>
+        </member>
         <member name="T:EasyMatrix.AMatrix">
             <summary>
             Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
@@ -83,7 +89,7 @@
             static variable that memorizes r for each iteration
             </summary>
         </member>
-        <member name="F:EasyMatrix.GradientSolver.Ap">
+        <member name="F:EasyMatrix.GradientSolver.Ar">
             <summary>
             static variable that memorizes Ap for each iteration
             </summary>
@@ -116,55 +122,6 @@
             <returns></returns>
         </member>
         <member name="M:EasyMatrix.GradientSolver.SolverExitCondition(System.Decimal[])">
-            <summary>
-            check if current solver arrived at an acceptable solution
-            </summary>
-            <param name="x">current solutions vector</param>
-            <returns></returns>
-        </member>
-        <member name="T:EasyMatrix.GradientSolver2">
-            <summary>
-            Implements solver with gradient method
-            </summary>
-        </member>
-        <member name="F:EasyMatrix.GradientSolver2.r">
-            <summary>
-            static variable that memorizes r for each iteration
-            </summary>
-        </member>
-        <member name="F:EasyMatrix.GradientSolver2.Ar">
-            <summary>
-            static variable that memorizes Ap for each iteration
-            </summary>
-        </member>
-        <member name="F:EasyMatrix.GradientSolver2.alpha">
-            <summary>
-            static variable that memorizes alpha for each iteration
-            </summary>
-        </member>
-        <member name="F:EasyMatrix.GradientSolver2.rNew">
-            <summary>
-            static variable that memorizes rnew for each iteration
-            </summary>
-        </member>
-        <member name="M:EasyMatrix.GradientSolver2.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
-            <summary>
-            basic contructor
-            </summary>
-            <param name="A">Decimals matrix</param>
-            <param name="b">vecror of known terms</param>
-            <param name="tol">tollerance index. Up to 28-29 digits precision</param>
-            <param name="maxIter">maximun number of iterations required</param>
-        </member>
-        <member name="M:EasyMatrix.GradientSolver2.SolverLogic(System.Int32,System.Decimal[])">
-            <summary>
-            implements Gradient formula
-            </summary>
-            <param name="i">current iteration index</param>
-            <param name="x">x vector</param>
-            <returns></returns>
-        </member>
-        <member name="M:EasyMatrix.GradientSolver2.SolverExitCondition(System.Decimal[])">
             <summary>
             check if current solver arrived at an acceptable solution
             </summary>
@@ -231,10 +188,11 @@
             <param name="x">solu</param>
             <returns></returns>
         </member>
-        <member name="M:EasyMatrix.IterativeSolver.LogResults(System.Decimal,System.Int32,System.TimeSpan)">
+        <member name="M:EasyMatrix.IterativeSolver.LogResults(System.Boolean,System.Decimal,System.Int32,System.TimeSpan)">
             <summary>
             Logs the result of the iterator
             </summary>
+            <param name="converge"></param>
             <param name="tolerance"></param>
             <param name="iterations"></param>
             <param name="timeSpent"></param>
@@ -304,49 +262,6 @@
             check if current solver arrived at an acceptable solution
             </summary>
             <param name="x">current solutions vector</param>
-            <returns></returns>
-        </member>
-        <member name="T:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix">
-            <summary>
-            Wrapper for matrix class
-            this class always uses maximum precision possible using decimals
-            </summary>
-        </member>
-        <member name="P:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.matrix">
-            <summary>
-            matrix to store the data
-            </summary>
-        </member>
-        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.#ctor(System.String)">
-            <summary>
-            create a matrix from a local .mtx file
-            </summary>
-            <param name="path">location of the .mtx file</param>
-        </member>
-        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.#ctor(MathNet.Numerics.LinearAlgebra.Matrix{System.Double})">
-            <summary>
-            creates a matrix usind a MathNet.Numerics.LinearAlgebra Matrix
-            </summary>
-            <param name="matrix"></param>
-            <exception cref="T:System.Exception"></exception>
-        </member>
-        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.ImportMatrix(System.String)">
-            <summary>
-            overwrites current matrix with a matrix from a .mtx file
-            </summary>
-            <param name="path"></param>
-        </member>
-        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.GetDefaultMatrix(System.Int32)">
-            <summary>
-            returns a pre-compiled matrix from the library
-            </summary>
-            <param name="number">insert a number between 1 and 4</param>
-            <returns>returns a pre-compiled matrix from the library</returns>
-        </member>
-        <member name="M:Library_Metodi_del_Calcolo_Scientifico.WrapMatrix.ToString">
-            <summary>
-            Prints the matrix
-            </summary>
             <returns></returns>
         </member>
     </members>

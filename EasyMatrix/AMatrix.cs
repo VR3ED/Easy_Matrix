@@ -15,6 +15,7 @@ namespace EasyMatrix
         public int rows { get; set; }
         public int columns { get; set; }
         public int number_of_valorized { get; set; }
+        public string matrix_name { get; set; }
 
 
         public abstract void InitializeMatrix(decimal[,] values);

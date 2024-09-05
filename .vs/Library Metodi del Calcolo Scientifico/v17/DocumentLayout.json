@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{3E94B0BD-0226-4502-959D-67C45504094D}|LibraryTesting\\LibraryTesting.csproj|solutionrelative:librarytesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\jacobisolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\jacobisolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\conjugategradientsolver .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\conjugategradientsolver .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\gradientsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\gaussseidelsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\matrixes\\spa1.mtx||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\matrixes\\spa1.mtx||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\conjugategradientsolver .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\conjugategradientsolver .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\jacobisolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\jacobisolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|c:\\users\\cava\\documents\\repos\\c#\\library metodi del calcolo scientifico\\easymatrix\\accuratematrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,7 +52,7 @@
               "RelativeDocumentMoniker": "LibraryTesting\\Program.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\LibraryTesting\\Program.cs",
               "RelativeToolTip": "LibraryTesting\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAYAAAA",
+              "ViewState": "AQIAABIAAABgZmZmZmYkwCUAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T19:37:54.509Z",
               "IsPinned": true,
@@ -64,40 +60,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "IterativeSolver.cs",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\IterativeSolver.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\IterativeSolver.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\IterativeSolver.cs",
               "RelativeToolTip": "EasyMatrix\\IterativeSolver.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAA6AAAA",
+              "ViewState": "AQIAANkAAAAAAAAAAAAAADQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-29T21:26:35.983Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GaussSeidelSolver.cs",
-              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\GaussSeidelSolver.cs",
-              "RelativeDocumentMoniker": "EasyMatrix\\GaussSeidelSolver.cs",
-              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\GaussSeidelSolver.cs",
-              "RelativeToolTip": "EasyMatrix\\GaussSeidelSolver.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAACkAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T14:04:15.668Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "JacobiSolver.cs",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\JacobiSolver.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\JacobiSolver.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\JacobiSolver.cs",
               "RelativeToolTip": "EasyMatrix\\JacobiSolver.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwEUAAAAJAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAowFAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-29T21:47:25.018Z",
               "IsPinned": true,
@@ -105,15 +88,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "GaussSeidelSolver.cs",
+              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\GaussSeidelSolver.cs",
+              "RelativeDocumentMoniker": "EasyMatrix\\GaussSeidelSolver.cs",
+              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\GaussSeidelSolver.cs",
+              "RelativeToolTip": "EasyMatrix\\GaussSeidelSolver.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAkwDUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T14:04:15.668Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GradientSolver.cs",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\GradientSolver.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\GradientSolver.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\GradientSolver.cs",
               "RelativeToolTip": "EasyMatrix\\GradientSolver.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAkAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAowGoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T12:12:47.804Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConjugateGradientSolver .cs",
+              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\ConjugateGradientSolver .cs",
+              "RelativeDocumentMoniker": "EasyMatrix\\ConjugateGradientSolver .cs",
+              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\ConjugateGradientSolver .cs",
+              "RelativeToolTip": "EasyMatrix\\ConjugateGradientSolver .cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAwwCwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T20:48:39.611Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -123,51 +134,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "spa1.mtx",
-              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\Matrixes\\spa1.mtx",
-              "RelativeDocumentMoniker": "EasyMatrix\\Matrixes\\spa1.mtx",
-              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\Matrixes\\spa1.mtx",
-              "RelativeToolTip": "EasyMatrix\\Matrixes\\spa1.mtx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001794|",
-              "WhenOpened": "2024-08-28T05:46:04.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConjugateGradientSolver .cs",
-              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\ConjugateGradientSolver .cs",
-              "RelativeDocumentMoniker": "EasyMatrix\\ConjugateGradientSolver .cs",
-              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\ConjugateGradientSolver .cs",
-              "RelativeToolTip": "EasyMatrix\\ConjugateGradientSolver .cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAAF8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T20:48:39.611Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AccurateMatrix.cs",
-              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AccurateMatrix.cs",
-              "RelativeDocumentMoniker": "EasyMatrix\\AccurateMatrix.cs",
-              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AccurateMatrix.cs",
-              "RelativeToolTip": "EasyMatrix\\AccurateMatrix.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T13:56:26.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "AMatrix.cs",
               "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AMatrix.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\AMatrix.cs",
               "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AMatrix.cs",
               "RelativeToolTip": "EasyMatrix\\AMatrix.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:32:24.099Z"
+              "WhenOpened": "2024-09-05T11:06:15.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccurateMatrix.cs",
+              "DocumentMoniker": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AccurateMatrix.cs",
+              "RelativeDocumentMoniker": "EasyMatrix\\AccurateMatrix.cs",
+              "ToolTip": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\AccurateMatrix.cs",
+              "RelativeToolTip": "EasyMatrix\\AccurateMatrix.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAowHEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:56:26.211Z",
+              "EditorCaption": ""
             }
           ]
         }
