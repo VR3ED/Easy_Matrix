@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -58,6 +60,8 @@ namespace EasyMatrix
         /// <exception cref="Exception"></exception>
         public decimal[] Solve()
         {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             int n = A.rows;
             decimal[] x = new decimal[n]; //vettore delle soluzioni --> inizializzato a zero
 
@@ -69,8 +73,11 @@ namespace EasyMatrix
                 }
 
                 if (SolverExitCondition(x))
+                {
+                    stopwatch.Stop();
+                    LogResults(tol, k, stopwatch.Elapsed);
                     return x;
-
+                }
             }
             throw new Exception("Iterative method did not converge.");
         }
@@ -91,6 +98,34 @@ namespace EasyMatrix
         /// <returns></returns>
         public abstract bool SolverExitCondition(decimal[] x);
 
+
+        /// <summary>
+        /// Logs the result of the iterator
+        /// </summary>
+        /// <param name="tolerance"></param>
+        /// <param name="iterations"></param>
+        /// <param name="timeSpent"></param>
+        protected void LogResults(decimal tolerance, int iterations, TimeSpan timeSpent)
+        {
+            string filePath = "results.csv";
+            bool fileExists = File.Exists(filePath);
+
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                // If file does not exist, write the header
+                if (!fileExists)
+                {
+                    writer.WriteLine("SolverType,PrecisionRequired,Iterations,TimeSpent(ms)");
+                }
+
+                string solverType = this.GetType().Name;
+
+                // Write the data
+                writer.WriteLine($"{solverType},{tolerance},{iterations},{timeSpent.TotalMilliseconds}");
+            }
+        }
+
+
         #region ELEMENTAL OPERATIONS
 
         /// <summary>
@@ -108,7 +143,7 @@ namespace EasyMatrix
             do
             {
                 previous = current;
-                if (previous == 0.0M) return 0;
+                if (previous == 0.0M) return 0; 
                 current = (previous + x / previous) / 2;
             }
             while (Math.Abs(previous - current) > epsilon);
@@ -147,13 +182,31 @@ namespace EasyMatrix
             }
 
             //calcola il residio b - Ax
-            decimal[] AxMinusB = new decimal[b.Length];
-            for (int i = 0; i < b.Length; i++)
-            {
-                AxMinusB[i] = Ax[i] - b[i];
-            }
+            decimal[] AxMinusB = VectorsSubtraction(Ax,b);
 
             return Norm(AxMinusB) / Norm(b);
+        }
+
+
+        /// <summary>
+        /// executes subraction between two vectors 
+        /// (vector1 - vector2)
+        /// </summary>
+        /// <param name="a">vector1</param>
+        /// <param name="b">vector2</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
+        protected decimal[] VectorsSubtraction(decimal[] a, decimal[] b)
+        {
+            if (a.Length != b.Length)
+                throw new ArgumentException("Vectors are not the same lenght");
+
+            decimal[] result = new decimal[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                result[i] = a[i] - b[i];
+            }
+            return result;
         }
 
         #endregion

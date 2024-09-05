@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +11,7 @@ namespace EasyMatrix
     /// </summary>
     public class GradientSolver : IterativeSolver
     {
+
         /// <summary>
         /// static variable that memorizes r for each iteration
         /// </summary>
@@ -20,7 +20,7 @@ namespace EasyMatrix
         /// <summary>
         /// static variable that memorizes Ap for each iteration
         /// </summary>
-        private static decimal[] Ap;
+        private static decimal[] Ar;
 
         /// <summary>
         /// static variable that memorizes alpha for each iteration
@@ -43,36 +43,9 @@ namespace EasyMatrix
         public GradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) 
         {
             r = (decimal[])b.Clone();
-            Ap = new decimal[A.rows];
+            Ar = new decimal[A.rows];
             alpha = 0;
             rNew = new decimal[A.rows];
-        }
-
-
-        public decimal[] Solve()
-        {
-            int n = A.rows;
-            decimal[] x = new decimal[n];
-            decimal[] r = (decimal[])b.Clone();
-            decimal[] Ap = new decimal[n];
-
-            for (int k = 0; k < maxIter; k++)
-            {
-                decimal alpha = VectorsMultiplication(r, r) / VectorsMultiplication(r, MatrixVectorMultiply(r));
-
-                for (int i = 0; i < n; i++)
-                {
-                    x[i] += alpha * r[i];
-                }
-
-                decimal[] rNew = VectorSubtract(r, MatrixVectorMultiply(alpha, r));
-
-                if (Norm(rNew) / Norm(b) < tol)
-                    return x;
-
-                r = rNew;
-            }
-            throw new Exception("Gradient method did not converge.");
         }
 
         /// <summary>
@@ -86,15 +59,36 @@ namespace EasyMatrix
             //alpha initialization
             if (i == 0)
             {
-                alpha = VectorsMultiplication(r, r) / VectorsMultiplication(r, MatrixVectorMultiply(r));
+                var Ax = MatrixVectorMultiply(x);
+                r = VectorsSubtraction(b,Ax);
+
+                // Calcolare Ar = A * r
+                Ar = MatrixVectorMultiply(r);
+
+                // Calcolare alpha = (r^T * r) / (r^T * A * r)
+                decimal rDotr = Dot(r, r);
+                decimal rDotAr = Dot(r, Ar);
+
+                // Evitare la divisione per zero
+                if (rDotAr == 0)
+                {
+                    //throw new Exception("Il metodo del gradiente ha incontrato una divisione per zero.");
+                    alpha = 0;
+                }
+
+                alpha = rDotr / rDotAr;
             }
 
             x[i] += alpha * r[i];
 
-            if (i == A.rows - 1)
-            {
-                rNew = VectorSubtract(r, MatrixVectorMultiply(alpha, r));                                   
-            }
+            //if (i == A.rows - 1)
+            //{
+            //    // Aggiornare r = r - alpha * Ap
+            //    for (int j = 0; j < A.rows; j++)
+            //    {
+            //        r[j] -= alpha * Ar[j];
+            //    }
+            //}
 
             return x;
         }
@@ -106,15 +100,7 @@ namespace EasyMatrix
         /// <returns></returns>
         public override bool SolverExitCondition(decimal[] x)
         {
-            if (Norm(rNew) / Norm(b) < tol)
-            {
-                return true;
-            }
-            else
-            {
-                r = rNew;
-                return false;   
-            }
+            return Norm(r) / Norm(b) < tol;
         }
 
         #region ELEMENTAL OPERATIONS
@@ -132,27 +118,7 @@ namespace EasyMatrix
             return result;
         }
 
-        private decimal[] MatrixVectorMultiply(decimal scalar, decimal[] vector)
-        {
-            decimal[] result = new decimal[vector.Length];
-            for (int i = 0; i < vector.Length; i++)
-            {
-                result[i] = scalar * vector[i];
-            }
-            return result;
-        }
-
-        private decimal[] VectorSubtract(decimal[] a, decimal[] b)
-        {
-            decimal[] result = new decimal[a.Length];
-            for (int i = 0; i < a.Length; i++)
-            {
-                result[i] = a[i] - b[i];
-            }
-            return result;
-        }
-
-        private decimal VectorsMultiplication(decimal[] a, decimal[] b)
+        private decimal Dot(decimal[] a, decimal[] b)
         {
             decimal sum = 0;
             for (int i = 0; i < a.Length; i++)

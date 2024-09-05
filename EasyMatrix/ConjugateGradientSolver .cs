@@ -8,54 +8,93 @@ namespace EasyMatrix
 {
     public class ConjugateGradientSolver : IterativeSolver
     {
-        public ConjugateGradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter)
-            : base(A, b, tol, maxIter) { }
+        private static decimal[] r;
 
-        //public override decimal[] Solve()
-        //{
-        //    int n = A.rows;
-        //    decimal[] x = new decimal[n];
-        //    decimal[] r = (decimal[])b.Clone();
-        //    decimal[] p = (decimal[])b.Clone();
-        //    decimal rsOld = Dot(r, r);
 
-        //    for (int k = 0; k < maxIter; k++)
-        //    {
-        //        decimal[] Ap = MatrixVectorMultiply(p);
-        //        decimal alpha = rsOld / Dot(p, Ap);
+        private static decimal[] p;
 
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            x[i] += alpha * p[i];
-        //        }
 
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            r[i] -= alpha * Ap[i];
-        //        }
+        private static decimal rsOld;
 
-        //        decimal rsNew = Dot(r, r);
-        //        if ((decimal)Math.Sqrt((double)rsNew) < tol)
-        //            return x;
 
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            p[i] = r[i] + (rsNew / rsOld) * p[i];
-        //        }
+        private static decimal alpha;
 
-        //        rsOld = rsNew;
-        //    }
-        //    throw new Exception("Conjugate Gradient method did not converge.");
-        //}
+
+        private static decimal[] Ap;
+
+
+        public ConjugateGradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) 
+        {
+            r = (decimal[])b.Clone();
+            p = (decimal[])b.Clone();
+            rsOld = Dot(r, r);
+            alpha = 0;
+        }
+
+        public new decimal[] Solve()
+        {
+            int n = A.rows;
+            decimal[] x = new decimal[n];
+            
+
+            for (int k = 0; k < maxIter; k++)
+            {
+                decimal[] Ap = MatrixVectorMultiply(p);
+                decimal alpha = rsOld / Dot(p, Ap);
+
+                for (int i = 0; i < n; i++)
+                {
+                    x[i] += alpha * p[i];
+                }
+
+                for (int i = 0; i < n; i++)
+                {
+                    r[i] -= alpha * Ap[i];
+                }
+
+                decimal rsNew = Dot(r, r);
+                if ((decimal)Math.Sqrt((double)rsNew) < tol)
+                    return x;
+
+                for (int i = 0; i < n; i++)
+                {
+                    p[i] = r[i] + (rsNew / rsOld) * p[i];
+                }
+
+                rsOld = rsNew;
+            }
+            throw new Exception("Conjugate Gradient method did not converge.");
+        }
 
         public override decimal[] SolverLogic(int i, decimal[] x)
         {
-            throw new NotImplementedException();
+            if (i == 0)
+            {
+                Ap = MatrixVectorMultiply(p);
+                alpha = rsOld / Dot(p, Ap);
+            }
+
+            x[i] += alpha * p[i];
+
+            r[i] -= alpha * Ap[i];
+
+            return x;
         }
 
         public override bool SolverExitCondition(decimal[] x)
         {
-            throw new NotImplementedException();
+            decimal rsNew = Dot(r, r);
+            if ((decimal)Math.Sqrt((double)rsNew) < tol)
+                return true;
+
+            for (int i = 0; i < A.rows; i++)
+            {
+                p[i] = r[i] + (rsNew / rsOld) * p[i];
+            }
+
+            rsOld = rsNew;
+
+            return false;
         }
 
 

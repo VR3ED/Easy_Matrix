@@ -122,6 +122,55 @@
             <param name="x">current solutions vector</param>
             <returns></returns>
         </member>
+        <member name="T:EasyMatrix.GradientSolver2">
+            <summary>
+            Implements solver with gradient method
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver2.r">
+            <summary>
+            static variable that memorizes r for each iteration
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver2.Ar">
+            <summary>
+            static variable that memorizes Ap for each iteration
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver2.alpha">
+            <summary>
+            static variable that memorizes alpha for each iteration
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver2.rNew">
+            <summary>
+            static variable that memorizes rnew for each iteration
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.GradientSolver2.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            basic contructor
+            </summary>
+            <param name="A">Decimals matrix</param>
+            <param name="b">vecror of known terms</param>
+            <param name="tol">tollerance index. Up to 28-29 digits precision</param>
+            <param name="maxIter">maximun number of iterations required</param>
+        </member>
+        <member name="M:EasyMatrix.GradientSolver2.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            implements Gradient formula
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">x vector</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.GradientSolver2.SolverExitCondition(System.Decimal[])">
+            <summary>
+            check if current solver arrived at an acceptable solution
+            </summary>
+            <param name="x">current solutions vector</param>
+            <returns></returns>
+        </member>
         <member name="T:EasyMatrix.IterativeSolver">
             <summary>
             Abstract class that defines an iterative solver with an abstract Solve method and helper methods such as Norm
@@ -182,6 +231,14 @@
             <param name="x">solu</param>
             <returns></returns>
         </member>
+        <member name="M:EasyMatrix.IterativeSolver.LogResults(System.Decimal,System.Int32,System.TimeSpan)">
+            <summary>
+            Logs the result of the iterator
+            </summary>
+            <param name="tolerance"></param>
+            <param name="iterations"></param>
+            <param name="timeSpent"></param>
+        </member>
         <member name="M:EasyMatrix.IterativeSolver.Sqrt(System.Decimal,System.Decimal)">
             <summary>
             compute the square root of a number
@@ -204,6 +261,16 @@
             </summary>
             <param name="x"></param>
             <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.VectorsSubtraction(System.Decimal[],System.Decimal[])">
+            <summary>
+            executes subraction between two vectors 
+            (vector1 - vector2)
+            </summary>
+            <param name="a">vector1</param>
+            <param name="b">vector2</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
         </member>
         <member name="T:EasyMatrix.JacobiSolver">
             <summary>
