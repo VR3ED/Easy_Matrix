@@ -98,10 +98,13 @@ for (int matrixIndex = 0; matrixIndex < 4; matrixIndex++)
             result = solver.Solve();
         
             Console.WriteLine("Finished "+ A.matrix_name +"(simmetrica e definita positiva: "+ A.IsSymmetricPositiveDefinite() + ")" + " " + solver.GetType().Name);
-        
+            
+            Console.WriteLine();
+
+            //foreach (var item in result) { Console.WriteLine(item); } Console.ReadKey();
         }
     }
 }
 
-Console.ReadKey();
+
 

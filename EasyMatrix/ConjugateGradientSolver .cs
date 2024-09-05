@@ -6,21 +6,25 @@ using System.Threading.Tasks;
 
 namespace EasyMatrix
 {
+    /// <summary>
+    /// Implements Conjugate Gradient.
+    /// </summary>
     public class ConjugateGradientSolver : IterativeSolver
     {
-        private static decimal[] r;
+        
+        private decimal[] r;
 
 
-        private static decimal[] p;
+        private decimal[] p;
 
 
-        private static decimal rsOld;
+        private decimal rsOld;
 
 
-        private static decimal alpha;
+        private decimal alpha;
 
 
-        private static decimal[] Ap;
+        private decimal[] Ap;
 
 
         public ConjugateGradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) 
@@ -31,41 +35,7 @@ namespace EasyMatrix
             alpha = 0;
         }
 
-        //public new decimal[] Solve()
-        //{
-        //    int n = A.rows;
-        //    decimal[] x = new decimal[n];
-            
-
-        //    for (int k = 0; k < maxIter; k++)
-        //    {
-        //        decimal[] Ap = MatrixVectorMultiply(p);
-        //        decimal alpha = rsOld / Dot(p, Ap);
-
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            x[i] += alpha * p[i];
-        //        }
-
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            r[i] -= alpha * Ap[i];
-        //        }
-
-        //        decimal rsNew = Dot(r, r);
-        //        if ((decimal)Math.Sqrt((double)rsNew) < tol)
-        //            return x;
-
-        //        for (int i = 0; i < n; i++)
-        //        {
-        //            p[i] = r[i] + (rsNew / rsOld) * p[i];
-        //        }
-
-        //        rsOld = rsNew;
-        //    }
-        //    throw new Exception("Conjugate Gradient method did not converge.");
-        //}
-
+        
         public override decimal[] SolverLogic(int i, decimal[] x)
         {
             if (i == 0)

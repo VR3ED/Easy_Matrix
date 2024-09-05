@@ -99,11 +99,6 @@
             static variable that memorizes alpha for each iteration
             </summary>
         </member>
-        <member name="F:EasyMatrix.GradientSolver.rNew">
-            <summary>
-            static variable that memorizes rnew for each iteration
-            </summary>
-        </member>
         <member name="M:EasyMatrix.GradientSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
             <summary>
             basic contructor

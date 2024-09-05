@@ -15,7 +15,7 @@ namespace EasyMatrix
         /// <summary>
         /// static variable that memorizes xOld for each iteration
         /// </summary>
-        private static decimal[] xOld;
+        private decimal[] xOld;
 
         /// <summary>
         /// constructor method, setups xOld
@@ -53,8 +53,10 @@ namespace EasyMatrix
             for (int j = 0; j < base.A.rows; j++)
             {
                 if (j != i)
+                {
                     //sommatoria di tutte le A[i,j] * x_j^k
                     sigma += A.matrix[i, j] * xOld[j];
+                }
             }
 
             //formula per calcolo di jacobi
