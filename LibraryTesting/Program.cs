@@ -6,12 +6,11 @@ using System.Runtime.InteropServices;
 decimal[] tol = [0.0001m, 0.000001m, 0.00000001m, 0.0000000001m, 0.00000000000001m];
 int maxIter = 50000;
 
-
 string file_path = "";
 
 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 {
-    file_path = @"\home\Cava\Documents\Repos\C#\Easy_Matrix\EasyMatrix\Matrixes\spa1.mtx";
+    file_path = "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/Matrixes/spa1.mtx";
 }
 else
 {
@@ -28,12 +27,14 @@ decimal[] b = new decimal[A.columns]; // inizializzazione vettore dei termini no
 b = Enumerable.Repeat(1.0m, A.columns).ToArray(); // inserimento di soli 1 all'interno del vettore di termini noti
 
 
+//foreach tollerance required
 for(int i=0; i<tol.Length-1; i++)
 {
-    decimal[] result = [];
-    IterativeSolver solver;
+    //foreach solver implemented
     for(int j=0; j<4; j++)
     {
+        decimal[] result = [];
+        IterativeSolver solver;
         switch (j)
         {
             case 0:

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -118,13 +119,14 @@ namespace EasyMatrix
                 // If file does not exist, write the header
                 if (!fileExists)
                 {
-                    writer.WriteLine("Matrix,Convergence,SolverType,PrecisionRequired,Iterations,TimeSpent(ms)");
+                    writer.WriteLine("Matrix,Convergence,SolverType,PrecisionRequired,Iterations,TimeSpent(ms),OS");
                 }
 
                 string solverType = this.GetType().Name;
+                string OS = RuntimeInformation.IsOSPlatform(OSPlatform.Linux) ? "Linux" : "Windows"; ;
 
                 // Write the data
-                writer.WriteLine($"{A.matrix_name},{converge},{solverType},{tolerance},{iterations},{timeSpent.TotalMilliseconds}");
+                writer.WriteLine($"{A.matrix_name},{converge},{solverType},{tolerance},{iterations},{timeSpent.TotalMilliseconds},{OS}");
             }
         }
 

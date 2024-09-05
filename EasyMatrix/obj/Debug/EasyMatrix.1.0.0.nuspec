@@ -6,7 +6,7 @@
     <title>EasyMatrix</title>
     <authors>Francesco Cavallini</authors>
     <description>A simple package to operate with matrixes in a simple way.</description>
-    <repository type="git" commit="b8a279c3f5fa49fb178563f6c214e36abe6449b1" />
+    <repository type="git" commit="54ab2bf0376849122d9f9b2ae799b749f1581690" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="MathNet.Numerics" version="5.0.0" exclude="Build,Analyzers" />
@@ -15,7 +15,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\Debug\net8.0\EasyMatrix.dll" target="lib\net8.0\EasyMatrix.dll" />
-    <file src="C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\Debug\net8.0\EasyMatrix.xml" target="lib\net8.0\EasyMatrix.xml" />
+    <file src="/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/CompiledLibrary/Debug/net8.0/EasyMatrix.dll" target="lib/net8.0/EasyMatrix.dll" />
+    <file src="/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/CompiledLibrary/Debug/net8.0/EasyMatrix.xml" target="lib/net8.0/EasyMatrix.xml" />
   </files>
 </package>

@@ -86,32 +86,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cava\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/Cava/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj",
+      "projectUniqueName": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj",
       "projectName": "EasyMatrix",
-      "projectPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj",
-      "packagesPath": "C:\\Users\\Cava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\obj\\",
+      "projectPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj",
+      "packagesPath": "/home/Cava/.nuget/packages/",
+      "outputPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Cava\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/Cava/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -160,7 +152,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/Cava/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyMatrix</name>
+    </assembly>
+    <members>
+        <member name="T:EasyMatrix.AccurateMatrix">
+            <summary>
+            Create a matrix using maximum precision
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.AccurateMatrix.chunk_load">
+            <summary>
+            number of chunks to be read at a time when reading a file
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.InitializeMatrix(System.Decimal[0:,0:])">
+            <summary>
+            initialize the matrix 
+            </summary>
+            <param name="values"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.#ctor(System.Int32)">
+            <summary>
+            initialize the matrix as an all 0 matrix
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.IsSymmetricPositiveDefinite">
+            <summary>
+            check if the matrix is both positive and symmetric
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.#ctor(System.String)">
+            <summary>
+            get a matrix of decimals
+            </summary>
+            <param name="filePath">Specify the path to the.mtx file</param>
+        </member>
+        <member name="M:EasyMatrix.AccurateMatrix.ToString">
+            <summary>
+            Display the matrix
+            </summary>
+            <returns>string matrix</returns>
+        </member>
+        <member name="T:EasyMatrix.AMatrix">
+            <summary>
+            Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
+            </summary>
+        </member>
+        <member name="T:EasyMatrix.GaussSeidelSolver">
+            <summary>
+            Implements Gauss-Seidel. It immediately uses the new calculated values ​​of the solution vector elements during iteration
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.GaussSeidelSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            constructor method
+            </summary>
+            <param name="A">Matrix to solve</param>
+            <param name="b">Solutions vectors</param>
+            <param name="tol"></param>
+            <param name="maxIter"></param>
+        </member>
+        <member name="M:EasyMatrix.GaussSeidelSolver.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            implements gauss siedel formula
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">x vector</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.GaussSeidelSolver.SolverExitCondition(System.Decimal[])">
+            <summary>
+            check if current solver arrived at an acceptable solution
+            </summary>
+            <param name="x">current solutions vector</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyMatrix.GradientSolver">
+            <summary>
+            Implements solver with gradient method
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver.r">
+            <summary>
+            static variable that memorizes r for each iteration
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver.Ar">
+            <summary>
+            static variable that memorizes Ap for each iteration
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver.alpha">
+            <summary>
+            static variable that memorizes alpha for each iteration
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.GradientSolver.rNew">
+            <summary>
+            static variable that memorizes rnew for each iteration
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.GradientSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            basic contructor
+            </summary>
+            <param name="A">Decimals matrix</param>
+            <param name="b">vecror of known terms</param>
+            <param name="tol">tollerance index. Up to 28-29 digits precision</param>
+            <param name="maxIter">maximun number of iterations required</param>
+        </member>
+        <member name="M:EasyMatrix.GradientSolver.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            implements Gradient formula
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">x vector</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.GradientSolver.SolverExitCondition(System.Decimal[])">
+            <summary>
+            check if current solver arrived at an acceptable solution
+            </summary>
+            <param name="x">current solutions vector</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyMatrix.IterativeSolver">
+            <summary>
+            Abstract class that defines an iterative solver with an abstract Solve method and helper methods such as Norm
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.IterativeSolver.A">
+            <summary>
+            Decimals matrix
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.IterativeSolver.b">
+            <summary>
+            vecror of known terms
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.IterativeSolver.tol">
+            <summary>
+            tollerance index. Up to 28-29 digits precision
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.IterativeSolver.maxIter">
+            <summary>
+            maximun number of iterations required
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            Constructor common for all Iterative Solvers
+            </summary>
+            <param name="A">Decimals matrix</param>
+            <param name="b">vecror of known terms</param>
+            <param name="tol">tollerance index. Up to 28-29 digits precision</param>
+            <param name="maxIter">maximun number of iterations required</param>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.Solve">
+            <summary>
+            Solve method that implents the basics of each solver we will implement from this class
+            Each Solver will have a differnt implementation of SolverLogic
+            This means that all Solvers will run this code below to scroll through the matrix,
+            But only the relative solver logic to the actual solver will get applied
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            abstrac method, each solver implements a differnt so
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">previuously calculated solution from previous iteration</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.SolverExitCondition(System.Decimal[])">
+            <summary>
+            
+            </summary>
+            <param name="i">current iteration</param>
+            <param name="x">solu</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.LogResults(System.Boolean,System.Decimal,System.Int32,System.TimeSpan)">
+            <summary>
+            Logs the result of the iterator
+            </summary>
+            <param name="converge"></param>
+            <param name="tolerance"></param>
+            <param name="iterations"></param>
+            <param name="timeSpent"></param>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.Sqrt(System.Decimal,System.Decimal)">
+            <summary>
+            compute the square root of a number
+            </summary>
+            <param name="x">value to calculate the quale root of</param>
+            <param name="epsilon">an accuracy of calculation of the root from our number.</param>
+            <returns></returns>
+            <exception cref="T:System.OverflowException"></exception>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.Norm(System.Decimal[])">
+            <summary>
+            compute the normalization value of an array 
+            </summary>
+            <param name="vec">vector to compute the normalization</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.NormAxMinusB(System.Decimal[])">
+            <summary>
+            compute actual tollerance
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.IterativeSolver.VectorsSubtraction(System.Decimal[],System.Decimal[])">
+            <summary>
+            executes subraction between two vectors 
+            (vector1 - vector2)
+            </summary>
+            <param name="a">vector1</param>
+            <param name="b">vector2</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:EasyMatrix.JacobiSolver">
+            <summary>
+            Implement Jacobi's method. Uses an iteration vector and a prior iteration vector to compute the approximate solution iteratively.
+            </summary>
+        </member>
+        <member name="F:EasyMatrix.JacobiSolver.xOld">
+            <summary>
+            static variable that memorizes xOld for each iteration
+            </summary>
+        </member>
+        <member name="M:EasyMatrix.JacobiSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
+            <summary>
+            constructor method, setups xOld
+            </summary>
+            <param name="A">Matrix to solve</param>
+            <param name="b">Solutions vectors</param>
+            <param name="tol"></param>
+            <param name="maxIter"></param>
+        </member>
+        <member name="M:EasyMatrix.JacobiSolver.SolverLogic(System.Int32,System.Decimal[])">
+            <summary>
+            implements jacobi formula
+            </summary>
+            <param name="i">current iteration index</param>
+            <param name="x">x vector</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyMatrix.JacobiSolver.SolverExitCondition(System.Decimal[])">
+            <summary>
+            check if current solver arrived at an acceptable solution
+            </summary>
+            <param name="x">current solutions vector</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

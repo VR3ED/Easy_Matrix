@@ -1,22 +1,44 @@
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\LibraryTesting.exe
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\LibraryTesting.deps.json
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\LibraryTesting.runtimeconfig.json
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\LibraryTesting.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\LibraryTesting.pdb
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\MathNet.Numerics.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\MathNet.Numerics.Data.Text.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\EasyMatrix.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\EasyMatrix.pdb
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\bin\Debug\net8.0\EasyMatrix.xml
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.csproj.AssemblyReference.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.AssemblyInfoInputs.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.AssemblyInfo.cs
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.csproj.CoreCompileInputs.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.sourcelink.json
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryT.CF853B72.Up2Date
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\refint\LibraryTesting.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.pdb
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.genruntimeconfig.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\ref\LibraryTesting.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/LibraryTesting.exe
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/LibraryTesting.deps.json
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/LibraryTesting.runtimeconfig.json
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/LibraryTesting.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/LibraryTesting.pdb
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/MathNet.Numerics.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/MathNet.Numerics.Data.Text.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/EasyMatrix.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/EasyMatrix.pdb
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/bin/Debug/net8.0/EasyMatrix.xml
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.csproj.AssemblyReference.cache
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.AssemblyInfoInputs.cache
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.AssemblyInfo.cs
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.csproj.CoreCompileInputs.cache
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.sourcelink.json
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryT.CF853B72.Up2Date
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/refint/LibraryTesting.dll
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.pdb
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/LibraryTesting.genruntimeconfig.cache
+C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/LibraryTesting/obj/Debug/net8.0/ref/LibraryTesting.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/LibraryTesting
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/LibraryTesting.deps.json
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/LibraryTesting.runtimeconfig.json
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/LibraryTesting.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/LibraryTesting.pdb
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/MathNet.Numerics.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/MathNet.Numerics.Data.Text.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/EasyMatrix.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/EasyMatrix.pdb
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/bin/Debug/net8.0/EasyMatrix.xml
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.csproj.AssemblyReference.cache
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.GeneratedMSBuildEditorConfig.editorconfig
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.AssemblyInfoInputs.cache
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.AssemblyInfo.cs
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.csproj.CoreCompileInputs.cache
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.sourcelink.json
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryT.CF853B72.Up2Date
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/refint/LibraryTesting.dll
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.pdb
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/LibraryTesting.genruntimeconfig.cache
+/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/Debug/net8.0/ref/LibraryTesting.dll
