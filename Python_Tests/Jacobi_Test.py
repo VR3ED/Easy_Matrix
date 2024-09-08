@@ -20,7 +20,9 @@ def Jacobi(A, b, N, x):
 
 
 # matrice A
-matrix = mmread(r"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx")
+#matrix = mmread(r"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx")
+matrix = mmread(r"/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/Matrixes/spa1.mtx")
+
 A = matrix.toarray()
 
 # vettore soluzioni b

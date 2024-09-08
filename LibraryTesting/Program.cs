@@ -105,6 +105,3 @@ for (int matrixIndex = 0; matrixIndex < 4; matrixIndex++)
         }
     }
 }
-
-
-

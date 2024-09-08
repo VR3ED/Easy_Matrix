@@ -50,6 +50,11 @@
             Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
             </summary>
         </member>
+        <member name="T:EasyMatrix.ConjugateGradientSolver">
+            <summary>
+            Implements Conjugate Gradient.
+            </summary>
+        </member>
         <member name="T:EasyMatrix.GaussSeidelSolver">
             <summary>
             Implements Gauss-Seidel. It immediately uses the new calculated values ​​of the solution vector elements during iteration
