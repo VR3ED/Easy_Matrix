@@ -8,11 +8,11 @@ int maxIter = 50000;
 
 string file_path = "";
 
-bool test_run = true;
+bool test_run = false;
 
 if (test_run)
 {
-    file_path = "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/Matrixes/vem1.mtx";
+    file_path = "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/Matrixes/spa1.mtx";
     
     AccurateMatrix A = new AccurateMatrix(file_path);
 
@@ -117,7 +117,7 @@ else
                 }
                 result = solver.Solve();
             
-                Console.WriteLine("Finished "+ A.matrix_name +"(simmetrica e definita positiva: "+ A.IsSymmetricPositiveDefinite() + ")" + " " + solver.GetType().Name);
+                Console.WriteLine("Finished "+ A.matrix_name +"(simmetrica e definita positiva: "+ A.IsSymmetricPositiveDefinite() + ")" + " " + "Precision:"+ tol[i] + " " + solver.GetType().Name);
                 
                 Console.WriteLine();
 

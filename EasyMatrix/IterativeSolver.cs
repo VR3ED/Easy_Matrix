@@ -239,7 +239,6 @@ namespace EasyMatrix
         }
         
         
-        
         /// <summary>
         /// Multiplys matrix A and vector v
         /// 
