@@ -68,11 +68,21 @@ namespace EasyMatrix
 
             for (int k = 0; k < maxIter; k++)
             {
-                for (int i = 0; i < n; i++)
+                #region  applicazione solver logic
+                
+                // Parallelizing the inner loop to calculate each element of x independently
+                // tutte le iterazioni tranne la prima e l'ultima vengono eseguite in parallelo
+                // questo perchè per la prima bisogna fare il setup e l'ultima bisogna testare la exit condition
+                x = SolverLogic(0, x);
+                Parallel.For(1, n-1, i =>
                 {
                     x = SolverLogic(i, x);
-                }
+                });
+                x = SolverLogic(n-1, x);
+                
+                #endregion
 
+                // Check for the exit condition
                 if (SolverExitCondition(x))
                 {
                     stopwatch.Stop();
@@ -84,6 +94,7 @@ namespace EasyMatrix
             LogResults(false, tol, maxIter, stopwatch.Elapsed);
             throw new Exception("Iterative method did not converge.");
         }
+
 
         /// <summary>
         /// abstrac method, each solver implements a differnt so
@@ -157,40 +168,52 @@ namespace EasyMatrix
 
 
         /// <summary>
-        /// compute the normalization value of an array 
+        /// compute the normalization value of an array
+        ///
+        /// decimal sum = 0;
+        /// foreach (var v in vec)
+        ///     sum += v * v;
+        /// return Sqrt(sum);
+        /// 
         /// </summary>
         /// <param name="vec">vector to compute the normalization</param>
         /// <returns></returns>
         protected decimal Norm(decimal[] vec)
         {
-            decimal sum = 0;
-            foreach (var v in vec)
-                sum += v * v;
+            decimal sum = vec.AsParallel().Sum(v => v * v);  
             return Sqrt(sum);
         }
 
+        
         /// <summary>
         /// compute actual tollerance
+        ///
+        /// decimal[] Ax = new decimal[b.Length];
+        /// for (int i = 0; i < A.rows; i++)
+        /// {
+        ///     for (int j = 0; j < A.columns; j++)
+        ///     {
+        ///         Ax[i] += A.matrix[i, j] * x[j];
+        ///     }
+        /// }
+        ///
+        /// decimal[] AxMinusB = VectorsSubtraction(Ax,b);
+        /// return Norm(AxMinusB) / Norm(b);
+        /// 
         /// </summary>
         /// <param name="x"></param>
         /// <returns></returns>
         protected decimal NormAxMinusB(decimal[] x)
         {
             //calcola prodotto matrice A per vettore x
-            decimal[] Ax = new decimal[b.Length];
-            for (int i = 0; i < A.rows; i++)
-            {
-                for (int j = 0; j < A.columns; j++)
-                {
-                    Ax[i] += A.matrix[i, j] * x[j];
-                }
-            }
+            decimal[] Ax = MatrixVectorMultiply(x);
 
             //calcola il residio b - Ax
-            decimal[] AxMinusB = VectorsSubtraction(Ax,b);
-
+            decimal[] AxMinusB = VectorsSubtraction(Ax, b);
+            
             return Norm(AxMinusB) / Norm(b);
         }
+
 
 
         /// <summary>
@@ -203,17 +226,85 @@ namespace EasyMatrix
         /// <exception cref="ArgumentException"></exception>
         protected decimal[] VectorsSubtraction(decimal[] a, decimal[] b)
         {
-            if (a.Length != b.Length)
-                throw new ArgumentException("Vectors are not the same lenght");
+            if (a.Length != b.Length) throw new ArgumentException("Vectors are not the same length");
 
             decimal[] result = new decimal[a.Length];
-            for (int i = 0; i < a.Length; i++)
+            
+            Parallel.For(0, a.Length, i =>
             {
                 result[i] = a[i] - b[i];
-            }
+            });
+
             return result;
         }
+        
+        
+        
+        /// <summary>
+        /// Multiplys matrix A and vector v
+        /// 
+        /// decimal[] result = new decimal[A.rows];
+        /// for (int i = 0; i < A.rows; i++)
+        /// {
+        ///    for (int j = 0; j < A.columns; j++)
+        ///    {
+        ///        result[i] += A.matrix[i, j] * vector[j];
+        ///    }
+        /// }
+        /// return result;
+        /// 
+        /// </summary>
+        /// <param name="vector"></param>
+        /// <returns></returns>
+        protected decimal[] MatrixVectorMultiply(decimal[] vector)
+        {
+            decimal[] result = new decimal[A.rows];
+            Parallel.For(0, A.rows, i =>
+            {
+                for (int j = 0; j < A.columns; j++)
+                {
+                    result[i] += A.matrix[i, j] * vector[j];
+                }
+            });
+            return result;
+        }
+        
 
+        
+        /// <summary>
+        /// Mutilplys two vectors a*b
+        ///
+        /// decimal sum = 0;
+        /// for (int i = 0; i < a.Length; i++)
+        /// {
+        ///     sum += a[i] * b[i];
+        /// }
+        /// return sum;
+        /// }
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        protected decimal Dot(decimal[] a, decimal[] b)
+        {
+            decimal sum = 0;
+            object lockObj = new object();
+            Parallel.For(0, a.Length, () => 0m, (i, state, partialSum) =>
+                {
+                    partialSum += a[i] * b[i];
+                    return partialSum;
+                },
+                localSum =>
+                {
+                    lock (lockObj)
+                    {
+                        sum += localSum;
+                    }
+                });
+            return sum;
+        }
+        
+        
         #endregion
     }
 }

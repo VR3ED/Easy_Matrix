@@ -143,7 +143,16 @@ namespace EasyMatrix
                         int row = int.Parse(values[0]) - 1;
                         int column = int.Parse(values[2]) - 1;
                         var numberFormatInfo = new NumberFormatInfo { NumberDecimalSeparator = "." };
-                        decimal value = decimal.Parse(values[4], numberFormatInfo);
+                        var strining_value = values[4];
+                        var exponent = 0;
+                        if (strining_value.Contains('e'))
+                        {
+                            var tmp = strining_value.Split('e')[0];
+                            exponent = int.Parse(strining_value.Split('e')[1]);
+                            strining_value = tmp;
+                        }
+                        decimal value = decimal.Parse(strining_value, numberFormatInfo);
+                        value = value * (decimal)Math.Pow(10, exponent) ;
                         base.matrix[row, column] = value;
                     }
                     //Console.WriteLine("Chunk finished: "+start+"-"+end);

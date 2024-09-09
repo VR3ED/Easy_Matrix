@@ -6,7 +6,7 @@
     <title>EasyMatrix</title>
     <authors>Francesco Cavallini</authors>
     <description>A simple package to operate with matrixes in a simple way.</description>
-    <repository type="git" commit="a79922f0f433a0fcdecba55be0c8bde2ba657be2" />
+    <repository type="git" commit="52fcee631017d4fee5603fa704335892b583a240" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="MathNet.Numerics" version="5.0.0" exclude="Build,Analyzers" />

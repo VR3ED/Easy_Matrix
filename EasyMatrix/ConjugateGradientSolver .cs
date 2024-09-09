@@ -32,7 +32,8 @@ namespace EasyMatrix
             r = (decimal[])b.Clone();
             p = (decimal[])b.Clone();
             rsOld = Dot(r, r);
-            alpha = 0;
+            Ap = MatrixVectorMultiply(p);
+            alpha = rsOld / Dot(p, Ap);
         }
 
         
@@ -66,34 +67,6 @@ namespace EasyMatrix
 
             return false;
         }
-
-
-        #region ELEMENTAL OPERATIONS
-
-        private decimal[] MatrixVectorMultiply(decimal[] vector)
-        {
-            decimal[] result = new decimal[A.rows];
-            for (int i = 0; i < A.rows; i++)
-            {
-                for (int j = 0; j < A.columns; j++)
-                {
-                    result[i] += A.matrix[i, j] * vector[j];
-                }
-            }
-            return result;
-        }
-
-        private decimal Dot(decimal[] a, decimal[] b)
-        {
-            decimal sum = 0;
-            for (int i = 0; i < a.Length; i++)
-            {
-                sum += a[i] * b[i];
-            }
-            return sum;
-        }
-
-        #endregion
 
     }
 }
