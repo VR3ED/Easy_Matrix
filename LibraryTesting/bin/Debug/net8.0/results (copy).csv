@@ -15,6 +15,7 @@ spa1.mtx,True,JacobiSolver,0.0000000001,329,52788.6563,Windows
 spa1.mtx,True,GaussSeidelSolver,0.0000000001,34,5824.3295,Windows
 spa1.mtx,True,GradientSolver,0.0000000001,20305,4904914.5941,Windows
 spa1.mtx,True,ConjugateGradientSolver,0.0000000001,230,18292.3951,Windows
+
 spa1.mtx,True,JacobiSolver,0.0001,130,13803.7393,Linux
 spa1.mtx,True,GaussSeidelSolver,0.0001,11,1229.4704,Linux
 spa1.mtx,True,GradientSolver,0.0001,6211,521914.4852,Linux

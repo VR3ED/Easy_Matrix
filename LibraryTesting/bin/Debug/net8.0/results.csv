@@ -49,7 +49,6 @@ spa2.mtx,True,GaussSeidelSolver,0.0000000001,15,14349.6671,Linux
 spa2.mtx,True,GradientSolver,0.0000000001,13101,9716301.5883,Linux
 spa2.mtx,True,ConjugateGradientSolver,0.0000000001,328,125494.9368,Linux
 
-
 spa1.mtx,True,JacobiSolver,0.0001,130,4088.55,Linux
 spa1.mtx,True,GaussSeidelSolver,0.0001,12,273.6878,Linux
 spa1.mtx,True,GradientSolver,0.0001,6211,115014.6438,Linux

@@ -4,8 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace EasyMatrix
 {
@@ -105,7 +104,7 @@ namespace EasyMatrix
         public abstract decimal[] SolverLogic(int i, decimal[] x);
 
         /// <summary>
-        /// 
+        /// evaluate if the solver has reached a good enough result, if yes, returns true
         /// </summary>
         /// <param name="i">current iteration</param>
         /// <param name="x">solu</param>
