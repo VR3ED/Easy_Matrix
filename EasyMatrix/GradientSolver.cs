@@ -27,11 +27,6 @@ namespace EasyMatrix
         /// </summary>
         private static decimal alpha;
 
-        /// <summary>
-        /// static variable that memorizes rnew for each iteration
-        /// </summary>
-        private static decimal[] rNew;
-
 
         /// <summary>
         /// basic contructor
@@ -45,7 +40,6 @@ namespace EasyMatrix
             r = (decimal[])b.Clone();
             Ar = new decimal[A.rows];
             alpha = 0;
-            rNew = new decimal[A.rows];
         }
 
         /// <summary>
@@ -81,15 +75,6 @@ namespace EasyMatrix
 
             x[i] += alpha * r[i];
 
-            //if (i == A.rows - 1)
-            //{
-            //    // Aggiornare r = r - alpha * Ap
-            //    for (int j = 0; j < A.rows; j++)
-            //    {
-            //        r[j] -= alpha * Ar[j];
-            //    }
-            //}
-
             return x;
         }
 
@@ -102,34 +87,6 @@ namespace EasyMatrix
         {
             return Norm(r) / Norm(b) < tol;
         }
-
-
-
-        #region ELEMENTAL OPERATIONS
-
-        private decimal[] MatrixVectorMultiply(decimal[] vector)
-        {
-            decimal[] result = new decimal[A.rows];
-            for (int i = 0; i < A.rows; i++)
-            {
-                for (int j = 0; j < A.columns; j++)
-                {
-                    result[i] += A.matrix[i, j] * vector[j];
-                }
-            }
-            return result;
-        }
-
-        private decimal Dot(decimal[] a, decimal[] b)
-        {
-            decimal sum = 0;
-            for (int i = 0; i < a.Length; i++)
-            {
-                sum += a[i] * b[i];
-            }
-            return sum;
-        }
-
-        #endregion
+        
     }
 }

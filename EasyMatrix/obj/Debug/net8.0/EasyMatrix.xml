@@ -50,6 +50,11 @@
             Abstract class that defines the structure of a generic array with properties for the size and number of valued values.
             </summary>
         </member>
+        <member name="T:EasyMatrix.ConjugateGradientSolver">
+            <summary>
+            Implements Conjugate Gradient.
+            </summary>
+        </member>
         <member name="T:EasyMatrix.GaussSeidelSolver">
             <summary>
             Implements Gauss-Seidel. It immediately uses the new calculated values ​​of the solution vector elements during iteration
@@ -97,11 +102,6 @@
         <member name="F:EasyMatrix.GradientSolver.alpha">
             <summary>
             static variable that memorizes alpha for each iteration
-            </summary>
-        </member>
-        <member name="F:EasyMatrix.GradientSolver.rNew">
-            <summary>
-            static variable that memorizes rnew for each iteration
             </summary>
         </member>
         <member name="M:EasyMatrix.GradientSolver.#ctor(EasyMatrix.AccurateMatrix,System.Decimal[],System.Decimal,System.Int32)">
@@ -207,19 +207,19 @@
             <exception cref="T:System.OverflowException"></exception>
         </member>
         <member name="M:EasyMatrix.IterativeSolver.Norm(System.Decimal[])">
-            <summary>
-            compute the normalization value of an array 
-            </summary>
-            <param name="vec">vector to compute the normalization</param>
-            <returns></returns>
+             <summary>
+             compute the normalization value of an array
+            
+             decimal sum = 0;
+             foreach (var v in vec)
+                 sum += v * v;
+             return Sqrt(sum);
+             
+             </summary>
+             <param name="vec">vector to compute the normalization</param>
+             <returns></returns>
         </member>
-        <member name="M:EasyMatrix.IterativeSolver.NormAxMinusB(System.Decimal[])">
-            <summary>
-            compute actual tollerance
-            </summary>
-            <param name="x"></param>
-            <returns></returns>
-        </member>
+        <!-- Badly formed XML comment ignored for member "M:EasyMatrix.IterativeSolver.NormAxMinusB(System.Decimal[])" -->
         <member name="M:EasyMatrix.IterativeSolver.VectorsSubtraction(System.Decimal[],System.Decimal[])">
             <summary>
             executes subraction between two vectors 
@@ -230,6 +230,8 @@
             <returns></returns>
             <exception cref="T:System.ArgumentException"></exception>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:EasyMatrix.IterativeSolver.MatrixVectorMultiply(System.Decimal[])" -->
+        <!-- Badly formed XML comment ignored for member "M:EasyMatrix.IterativeSolver.Dot(System.Decimal[],System.Decimal[])" -->
         <member name="T:EasyMatrix.JacobiSolver">
             <summary>
             Implement Jacobi's method. Uses an iteration vector and a prior iteration vector to compute the approximate solution iteratively.

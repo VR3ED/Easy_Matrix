@@ -1,0 +1,13 @@
+Matrix,Convergence,SolverType,PrecisionRequired,Iterations,TimeSpent(ms),OS
+spa1.mtx,True,ConjugateGradientSolver,1e-10,158,41.625261306762695,Linux
+spa2.mtx,True,ConjugateGradientSolver,1e-10,171,649.0664482116699,Linux
+vem1.mtx,True,ConjugateGradientSolver,1e-10,41,2.0432472229003906,Linux
+vem2.mtx,True,ConjugateGradientSolver,1e-10,51,3.100872039794922,Linux
+spa1.mtx,True,JacobiSolver,1e-10,50000,3545.718193054199,Linux
+spa2.mtx,True,JacobiSolver,1e-10,50000,154162.27793693542,Linux
+vem1.mtx,True,JacobiSolver,1e-10,50000,38331.08735084534,Linux
+vem2.mtx,True,JacobiSolver,1e-10,50000,128998.19922447205,Linux
+spa1.mtx,True,GaussSeidelSolver,1e-10,38,160.79235076904297,Linux
+spa2.mtx,True,GaussSeidelSolver,1e-10,18,315.7341480255127,Linux
+vem1.mtx,True,GaussSeidelSolver,1e-10,2230,15422.866344451904,Linux
+vem2.mtx,True,GaussSeidelSolver,1e-10,3399,38714.09034729004,Linux

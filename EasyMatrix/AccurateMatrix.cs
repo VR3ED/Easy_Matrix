@@ -3,6 +3,7 @@ using MathNet.Numerics.LinearAlgebra;
 using MathNet.Numerics.LinearAlgebra.Complex;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.ExceptionServices;
@@ -98,7 +99,14 @@ namespace EasyMatrix
         public AccurateMatrix (string filePath)
         {
             //setup matrix name
-            this.matrix_name = filePath.Split('\\').Last();
+            if (filePath.Contains('\\'))
+            {
+                this.matrix_name = filePath.Split('\\').Last();
+            }
+            else
+            {
+                this.matrix_name = filePath.Split('/').Last();
+            }
 
             // Read all lines from the file
             string[] lines = File.ReadAllLines(filePath);
@@ -134,7 +142,17 @@ namespace EasyMatrix
                         string[] values = lines[i].Split(' ');
                         int row = int.Parse(values[0]) - 1;
                         int column = int.Parse(values[2]) - 1;
-                        decimal value = decimal.Parse(values[4]);
+                        var numberFormatInfo = new NumberFormatInfo { NumberDecimalSeparator = "." };
+                        var strining_value = values[4];
+                        var exponent = 0;
+                        if (strining_value.Contains('e'))
+                        {
+                            var tmp = strining_value.Split('e')[0];
+                            exponent = int.Parse(strining_value.Split('e')[1]);
+                            strining_value = tmp;
+                        }
+                        decimal value = decimal.Parse(strining_value, numberFormatInfo);
+                        value = value * (decimal)Math.Pow(10, exponent) ;
                         base.matrix[row, column] = value;
                     }
                     //Console.WriteLine("Chunk finished: "+start+"-"+end);

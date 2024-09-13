@@ -1,0 +1,7 @@
+# Ignore build artifacts
+/CompiledLibrary/Debug/
+*.dll
+*.pdb
+*.nupkg
+*.deps.json
+*.xml
