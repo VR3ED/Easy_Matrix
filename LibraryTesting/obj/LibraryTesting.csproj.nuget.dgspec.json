@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/LibraryTesting.csproj": {}
+    "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\LibraryTesting\\LibraryTesting.csproj": {}
   },
   "projects": {
-    "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj": {
+    "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj",
+        "projectUniqueName": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj",
         "projectName": "EasyMatrix",
-        "projectPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj",
-        "packagesPath": "/home/Cava/.nuget/packages/",
-        "outputPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/",
+        "projectPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj",
+        "packagesPath": "C:\\Users\\Cava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/Cava/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Cava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,34 +75,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/Cava/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/LibraryTesting.csproj": {
+    "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\LibraryTesting\\LibraryTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/LibraryTesting.csproj",
+        "projectUniqueName": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\LibraryTesting\\LibraryTesting.csproj",
         "projectName": "LibraryTesting",
-        "projectPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/LibraryTesting.csproj",
-        "packagesPath": "/home/Cava/.nuget/packages/",
-        "outputPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/LibraryTesting/obj/",
+        "projectPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\LibraryTesting\\LibraryTesting.csproj",
+        "packagesPath": "C:\\Users\\Cava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\LibraryTesting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/Cava/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Cava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj": {
-                "projectPath": "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/EasyMatrix.csproj"
+              "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj": {
+                "projectPath": "C:\\Users\\Cava\\Documents\\REPOS\\C#\\Library Metodi del Calcolo Scientifico\\EasyMatrix\\EasyMatrix.csproj"
               }
             }
           }
@@ -130,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/Cava/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

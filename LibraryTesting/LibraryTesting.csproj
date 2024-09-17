@@ -5,6 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <OutDir>C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\</OutDir>
   </PropertyGroup>
 
   <ItemGroup>

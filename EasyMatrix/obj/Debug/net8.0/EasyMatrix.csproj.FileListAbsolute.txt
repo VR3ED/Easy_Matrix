@@ -1,26 +1,15 @@
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.csproj.AssemblyReference.cache
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.AssemblyInfoInputs.cache
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.AssemblyInfo.cs
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.csproj.CoreCompileInputs.cache
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.sourcelink.json
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.dll
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/refint/EasyMatrix.dll
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.xml
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/EasyMatrix.pdb
-C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/EasyMatrix/obj/Debug/net8.0/ref/EasyMatrix.dll
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.dll
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/refint/EasyMatrix.dll
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.xml
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.pdb
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/CompiledLibrary/Debug/net8.0/EasyMatrix.deps.json
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/CompiledLibrary/Debug/net8.0/EasyMatrix.dll
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/CompiledLibrary/Debug/net8.0/EasyMatrix.pdb
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/C:/Users/Cava/Documents/REPOS/C#/Library Metodi del Calcolo Scientifico/CompiledLibrary/Debug/net8.0/EasyMatrix.xml
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.csproj.AssemblyReference.cache
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.GeneratedMSBuildEditorConfig.editorconfig
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.AssemblyInfoInputs.cache
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.AssemblyInfo.cs
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.csproj.CoreCompileInputs.cache
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/EasyMatrix.sourcelink.json
-/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/obj/Debug/net8.0/ref/EasyMatrix.dll
+C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\EasyMatrix.deps.json
+C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\EasyMatrix.dll
+C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\EasyMatrix.pdb
+C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\EasyMatrix.xml
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.csproj.AssemblyReference.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.AssemblyInfoInputs.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.AssemblyInfo.cs
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.csproj.CoreCompileInputs.cache
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.sourcelink.json
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.dll
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\refint\EasyMatrix.dll
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.xml
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\EasyMatrix.pdb
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\obj\Debug\net8.0\ref\EasyMatrix.dll

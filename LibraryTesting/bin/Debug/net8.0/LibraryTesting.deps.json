@@ -39,10 +39,7 @@
           "MathNet.Numerics.Data.Text": "5.0.0"
         },
         "runtime": {
-          "EasyMatrix.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "EasyMatrix.dll": {}
         }
       }
     }
