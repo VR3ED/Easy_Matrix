@@ -11,7 +11,7 @@
     <Description>A simple package to operate with matrixes in a simple way. </Description>
     <BaseOutputPath>C:\Users\Cava\Documents\REPOS\C%23\Library Metodi del Calcolo Scientifico\CompiledLibrary</BaseOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <OutDir>C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\</OutDir>
+    <OutDir>C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary</OutDir>
   </PropertyGroup>
 
   <ItemGroup>

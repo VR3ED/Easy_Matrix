@@ -35,15 +35,3 @@ C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\Comp
 C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\LibraryTesting.runtimeconfig.json
 C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\LibraryTesting.dll
 C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\LibraryTesting.pdb
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.csproj.AssemblyReference.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.AssemblyInfoInputs.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.AssemblyInfo.cs
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.csproj.CoreCompileInputs.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.sourcelink.json
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryT.CF853B72.Up2Date
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\refint\LibraryTesting.dll
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.pdb
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\LibraryTesting.genruntimeconfig.cache
-C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\LibraryTesting\obj\Debug\net8.0\ref\LibraryTesting.dll
