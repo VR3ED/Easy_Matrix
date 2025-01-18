@@ -8,17 +8,20 @@ int maxIter = 50000;
 
 string file_path = "";
 
-bool test_run = false;
+bool test_run = true;
 
 if (test_run)
 {
-    file_path = "/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/Matrixes/spa1.mtx";
+    file_path = @"D:\Repos\c#\Easy_Matrix\EasyMatrix\Matrixes\spa1.mtx";
     
     AccurateMatrix A = new AccurateMatrix(file_path);
 
     decimal[] b = new decimal[A.columns]; // inizializzazione vettore dei termini noti
     b = Enumerable.Repeat(1.0m, A.columns).ToArray(); // inserimento di soli 1 all'interno del vettore di termini noti
-    
+
+    Console.WriteLine("Matrice simmetrica e definita postitiva: "+A.IsSymmetricPositiveDefinite());
+    Console.ReadKey();
+
     IterativeSolver solver = new JacobiSolver(A, b, tol[0], maxIter);
     
     solver.Solve();

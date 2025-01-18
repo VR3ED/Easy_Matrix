@@ -35,3 +35,20 @@ C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\Comp
 C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\LibraryTesting.runtimeconfig.json
 C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\LibraryTesting.dll
 C:\Users\Cava\Documents\REPOS\CSharp\Library_Metodi_del_Calcolo_Scientifico\CompiledLibrary\LibraryTesting.pdb
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\LibraryTesting.exe
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\LibraryTesting.deps.json
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\LibraryTesting.runtimeconfig.json
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\LibraryTesting.dll
+C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary\LibraryTesting.pdb
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.csproj.AssemblyReference.cache
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.AssemblyInfoInputs.cache
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.AssemblyInfo.cs
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.csproj.CoreCompileInputs.cache
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.sourcelink.json
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryT.CF853B72.Up2Date
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.dll
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\refint\LibraryTesting.dll
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.pdb
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\LibraryTesting.genruntimeconfig.cache
+D:\Repos\c#\Easy_Matrix\LibraryTesting\obj\Debug\net8.0\ref\LibraryTesting.dll

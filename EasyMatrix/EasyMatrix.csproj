@@ -8,11 +8,38 @@
     <Title>EasyMatrix</Title>
     <Authors>Francesco Cavallini</Authors>
     <Company />
-    <Description>A simple package to operate with matrixes in a simple way. </Description>
+    <Description>A simple package to operate with matrixes in a simple way.
+You can operate with following matrix solvers:
+- Conjugate Gradient solver
+- Gauss Seidel solver
+- Gradient solver
+- Jacobi solver</Description>
     <BaseOutputPath>C:\Users\Cava\Documents\REPOS\C%23\Library Metodi del Calcolo Scientifico\CompiledLibrary</BaseOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <OutDir>C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\CompiledLibrary</OutDir>
+    <PackageProjectUrl>https://github.com/VR3ED/Easy_Matrix</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VR3ED/Easy_Matrix</RepositoryUrl>
+    <PackageTags>matrixes; matrix; Jacobi; Gradient; Gauss Seidel; Conjugate Gradient; solver</PackageTags>
+    <PackageIcon>LibraryIcon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>easy_matrix</PackageId>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Icons\LibraryIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />

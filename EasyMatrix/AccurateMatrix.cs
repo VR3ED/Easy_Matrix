@@ -66,6 +66,10 @@ namespace EasyMatrix
         /// <returns></returns>
         public bool IsSymmetricPositiveDefinite()
         {
+            // Verify squared natrix
+            if (rows != columns)
+                return false;
+
             // Check for symmetry
             for (int i = 0; i < rows; i++)
             {
@@ -76,16 +80,40 @@ namespace EasyMatrix
                 }
             }
 
-            // Check for positive definiteness using the Cholesky decomposition
+            #region create a copy of the matrix
+            decimal[,] tempMatrix = new decimal[rows, columns];
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    tempMatrix[i, j] = matrix[i, j];
+                }
+            }
+            #endregion
+
+            // Cholesky decomposition on copied matrix
             for (int i = 0; i < rows; i++)
             {
                 decimal sum = 0;
                 for (int k = 0; k < i; k++)
                 {
-                    sum += matrix[i, k] * matrix[i, k];
+                    sum += tempMatrix[i, k] * tempMatrix[i, k];
                 }
-                if (matrix[i, i] - sum <= 0)
+
+                decimal diagValue = tempMatrix[i, i] - sum;
+                if (diagValue <= 0)
                     return false;
+
+                tempMatrix[i, i] = Sqrt(diagValue);
+                for (int j = i + 1; j < rows; j++)
+                {
+                    sum = 0;
+                    for (int k = 0; k < i; k++)
+                    {
+                        sum += tempMatrix[j, k] * tempMatrix[i, k];
+                    }
+                    tempMatrix[j, i] = (tempMatrix[j, i] - sum) / tempMatrix[i, i];
+                }
             }
 
             return true;
@@ -210,6 +238,28 @@ namespace EasyMatrix
             }
 
             return result.ToString();
+        }
+
+        /// <summary>
+        /// compute the square root of a number
+        /// </summary>
+        /// <param name="x">value to calculate the quale root of</param>
+        /// <param name="epsilon">an accuracy of calculation of the root from our number.</param>
+        /// <returns></returns>
+        /// <exception cref="OverflowException"></exception>
+        private decimal Sqrt(decimal x, decimal epsilon = 0.0M)
+        {
+            if (x < 0) throw new OverflowException("Cannot calculate square root from a negative number");
+
+            decimal current = (decimal)Math.Sqrt((double)x), previous;
+            do
+            {
+                previous = current;
+                if (previous == 0.0M) return 0;
+                current = (previous + x / previous) / 2;
+            }
+            while (Math.Abs(previous - current) > epsilon);
+            return current;
         }
 
     }
