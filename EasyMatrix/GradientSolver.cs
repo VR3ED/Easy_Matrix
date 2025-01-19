@@ -54,7 +54,7 @@ namespace EasyMatrix
             if (i == 0)
             {
                 var Ax = MatrixVectorMultiply(x);
-                AxMinusB = VectorsSubtraction(b,Ax); //indichiamo Ax-b = r
+                AxMinusB = VectorsSubtraction(b,Ax); //indichiamo b-Ax = r
 
                 // Calcolare Ar = A * (Ax-b)
                 Ar = MatrixVectorMultiply(AxMinusB);
