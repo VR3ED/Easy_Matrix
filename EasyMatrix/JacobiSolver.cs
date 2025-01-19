@@ -54,7 +54,7 @@ namespace EasyMatrix
             {
                 if (j != i)
                 {
-                    //sommatoria di tutte le A[i,j] * x_j^k
+                    //sommatoria di tutte le A[i,j] * x[j]^k
                     sigma += A.matrix[i, j] * xOld[j];
                 }
             }
@@ -62,7 +62,7 @@ namespace EasyMatrix
             //formula per calcolo di jacobi
             x[i] = (b[i] - sigma) / A.matrix[i, i];
 
-            //se sono arrivato alla fine mi salvo il nuvo xOld
+            //arrivato alla fine mi salvo il nuvo xOld
             if (i == A.rows-1)
             {
                 Array.Copy(x, xOld, A.rows);
@@ -79,7 +79,7 @@ namespace EasyMatrix
         /// <returns></returns>
         public override bool SolverExitCondition(decimal[] x)
         {
-            return NormAxMinusB(x) < tol;
+            return NormAxMinusBFracNormB(x) < tol;
         }
     }
 }

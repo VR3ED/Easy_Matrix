@@ -202,7 +202,7 @@ namespace EasyMatrix
         /// </summary>
         /// <param name="x"></param>
         /// <returns></returns>
-        protected decimal NormAxMinusB(decimal[] x)
+        protected decimal NormAxMinusBFracNormB(decimal[] x)
         {
             //calcola prodotto matrice A per vettore x
             decimal[] Ax = MatrixVectorMultiply(x);

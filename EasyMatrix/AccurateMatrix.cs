@@ -142,7 +142,7 @@ namespace EasyMatrix
             string firstRow = lines[1];
 
             // Determine the dimensions of the matrix
-            var firstRowParts = firstRow.Split( ' ');
+            var firstRowParts = firstRow.Split(' ');
             rows = int.Parse(firstRowParts[0]);
             columns = int.Parse(firstRowParts[2]);
             number_of_valorized = int.Parse(firstRowParts[4]);

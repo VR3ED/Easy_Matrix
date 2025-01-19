@@ -15,10 +15,10 @@ namespace EasyMatrix
         /// <summary>
         /// static variable that memorizes r for each iteration
         /// </summary>
-        private static decimal[] r;
+        private static decimal[] AxMinusB;
 
         /// <summary>
-        /// static variable that memorizes Ap for each iteration
+        /// static variable that memorizes Ar for each iteration
         /// </summary>
         private static decimal[] Ar;
 
@@ -37,7 +37,7 @@ namespace EasyMatrix
         /// <param name="maxIter">maximun number of iterations required</param>
         public GradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) 
         {
-            r = (decimal[])b.Clone();
+            AxMinusB = (decimal[])b.Clone();
             Ar = new decimal[A.rows];
             alpha = 0;
         }
@@ -54,26 +54,25 @@ namespace EasyMatrix
             if (i == 0)
             {
                 var Ax = MatrixVectorMultiply(x);
-                r = VectorsSubtraction(b,Ax);
+                AxMinusB = VectorsSubtraction(b,Ax); //indichiamo Ax-b = r
 
-                // Calcolare Ar = A * r
-                Ar = MatrixVectorMultiply(r);
+                // Calcolare Ar = A * (Ax-b)
+                Ar = MatrixVectorMultiply(AxMinusB);
 
                 // Calcolare alpha = (r^T * r) / (r^T * A * r)
-                decimal rDotr = Dot(r, r);
-                decimal rDotAr = Dot(r, Ar);
+                decimal rDotr = Dot(AxMinusB, AxMinusB);
+                decimal rDotAr = Dot(AxMinusB, Ar);
 
                 // Evitare la divisione per zero
                 if (rDotAr == 0)
                 {
-                    //throw new Exception("Il metodo del gradiente ha incontrato una divisione per zero.");
                     alpha = 0;
                 }
 
                 alpha = rDotr / rDotAr;
             }
 
-            x[i] += alpha * r[i];
+            x[i] += alpha * AxMinusB[i];
 
             return x;
         }
@@ -85,7 +84,7 @@ namespace EasyMatrix
         /// <returns></returns>
         public override bool SolverExitCondition(decimal[] x)
         {
-            return Norm(r) / Norm(b) < tol;
+            return NormAxMinusBFracNormB(x) < tol;
         }
         
     }

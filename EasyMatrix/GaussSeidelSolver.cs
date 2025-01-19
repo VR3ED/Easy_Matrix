@@ -19,8 +19,7 @@ namespace EasyMatrix
         /// <param name="b">Solutions vectors</param>
         /// <param name="tol"></param>
         /// <param name="maxIter"></param>
-        public GaussSeidelSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter)
-            : base(A, b, tol, maxIter) { }
+        public GaussSeidelSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) { }
 
 
         /// <summary>
@@ -51,7 +50,7 @@ namespace EasyMatrix
         /// <returns></returns>
         public override bool SolverExitCondition(decimal[] x)
         {
-            return NormAxMinusB(x) < tol;
+            return NormAxMinusBFracNormB(x) < tol;
         }
 
     }
