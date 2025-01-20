@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Repos\\c#\\Easy_Matrix\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|d:\\repos\\c#\\easy_matrix\\easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|d:\\repos\\c#\\easy_matrix\\easymatrix\\conjugategradientsolver .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\conjugategradientsolver .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|d:\\repos\\c#\\easy_matrix\\easymatrix\\gradientsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\gradientsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|d:\\repos\\c#\\easy_matrix\\easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEDD407-B202-48D2-922C-E57E316F22FD}|EasyMatrix\\EasyMatrix.csproj|solutionrelative:easymatrix\\iterativesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E94B0BD-0226-4502-959D-67C45504094D}|LibraryTesting\\LibraryTesting.csproj|d:\\repos\\c#\\easy_matrix\\librarytesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -58,18 +58,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T19:37:54.509Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "IterativeSolver.cs",
               "DocumentMoniker": "D:\\Repos\\c#\\Easy_Matrix\\EasyMatrix\\IterativeSolver.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\IterativeSolver.cs",
               "ToolTip": "D:\\Repos\\c#\\Easy_Matrix\\EasyMatrix\\IterativeSolver.cs",
               "RelativeToolTip": "EasyMatrix\\IterativeSolver.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAASwEQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAawBQBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-29T21:26:35.983Z",
               "IsPinned": true,
@@ -86,8 +85,7 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAAwD4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-29T21:47:25.018Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -104,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GradientSolver.cs",
               "DocumentMoniker": "D:\\Repos\\c#\\Easy_Matrix\\EasyMatrix\\GradientSolver.cs",
               "RelativeDocumentMoniker": "EasyMatrix\\GradientSolver.cs",
@@ -113,18 +111,17 @@
               "ViewState": "AgIAAB0AAAAAAAAAAAAAwDgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T12:12:47.804Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ConjugateGradientSolver .cs",
               "DocumentMoniker": "D:\\Repos\\c#\\Easy_Matrix\\EasyMatrix\\ConjugateGradientSolver .cs",
               "RelativeDocumentMoniker": "EasyMatrix\\ConjugateGradientSolver .cs",
               "ToolTip": "D:\\Repos\\c#\\Easy_Matrix\\EasyMatrix\\ConjugateGradientSolver .cs",
               "RelativeToolTip": "EasyMatrix\\ConjugateGradientSolver .cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAgwEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAYwGkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T20:48:39.611Z",
               "IsPinned": true,

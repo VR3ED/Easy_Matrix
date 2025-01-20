@@ -40,7 +40,8 @@ namespace EasyMatrix
         /// <param name="tol">tollerance index. Up to 28-29 digits precision</param>
         /// <param name="maxIter">maximun number of iterations required</param>
         /// <param name="x">vectror of unknown terms</param>
-        public ConjugateGradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter, decimal[]? x = null) : base(A, b, tol, maxIter) 
+        public ConjugateGradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter, decimal[]? x = null) 
+            : base(A, b, tol, maxIter) 
         {
             if(x == null)
             {
@@ -77,7 +78,7 @@ namespace EasyMatrix
             if (i == 0)
             {
                 Ap = MatrixVectorMultiply(p);
-                alpha = rDOTr / Dot(p, Ap);
+                alpha = rDOTr / Dot(r, Ap);
             }
 
             x[i] += alpha * p[i];

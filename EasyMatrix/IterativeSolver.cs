@@ -270,7 +270,7 @@ namespace EasyMatrix
 
         
         /// <summary>
-        /// Mutilplys two vectors a*b
+        /// Mutilplys two vectors a^T*b
         ///
         /// decimal sum = 0;
         /// for (int i = 0; i < a.Length; i++)
