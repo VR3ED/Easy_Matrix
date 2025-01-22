@@ -1,0 +1,17 @@
+Matrix,Convergence,SolverType,PrecisionRequired,Iterations,TimeSpent(ms),OS
+spa1.mtx,True,JacobiSolver,0.0001,130,23378.2191,Windows
+spa1.mtx,True,GaussSeidelSolver,0.0001,11,2015.4692,Windows
+spa1.mtx,True,GradientSolver,0.0001,6211,1047191.6797,Windows
+spa1.mtx,True,ConjugateGradientSolver,0.0001,164,45347.2884,Windows
+spa1.mtx,True,JacobiSolver,0.000001,197,109655.2959,Windows
+spa1.mtx,True,GaussSeidelSolver,0.000001,19,9127.0784,Windows
+spa1.mtx,True,GradientSolver,0.000001,10907,2091285.5039,Windows
+spa1.mtx,True,ConjugateGradientSolver,0.000001,185,15234.1886,Windows
+spa1.mtx,True,JacobiSolver,0.00000001,263,40922.0715,Windows
+spa1.mtx,True,GaussSeidelSolver,0.00000001,26,4329.785,Windows
+spa1.mtx,True,GradientSolver,0.00000001,15607,3033294.045,Windows
+spa1.mtx,True,ConjugateGradientSolver,0.00000001,207,17665.4808,Windows
+spa1.mtx,True,JacobiSolver,0.0000000001,329,52788.6563,Windows
+spa1.mtx,True,GaussSeidelSolver,0.0000000001,34,5824.3295,Windows
+spa1.mtx,True,GradientSolver,0.0000000001,20305,4904914.5941,Windows
+spa1.mtx,True,ConjugateGradientSolver,0.0000000001,230,18292.3951,Windows

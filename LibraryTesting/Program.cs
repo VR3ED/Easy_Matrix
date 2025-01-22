@@ -12,7 +12,7 @@ bool test_run = true;
 
 if (test_run)
 {
-    file_path = @"D:\Repos\c#\Easy_Matrix\EasyMatrix\Matrixes\spa1.mtx";
+    file_path = @"D:\Repos\c#\Easy_Matrix\EasyMatrix\Matrixes\vem1.mtx";
     
     AccurateMatrix A = new AccurateMatrix(file_path);
 
@@ -24,7 +24,7 @@ if (test_run)
 
     IterativeSolver solver = new JacobiSolver(A, b, tol[0], maxIter);
     
-    solver.Solve();
+     decimal[] x = solver.Solve();
     
     Console.WriteLine("fatto");
     Console.ReadKey();

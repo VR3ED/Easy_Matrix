@@ -7,7 +7,7 @@ from logger import log_results
 # https://stackoverflow.com/questions/59680833/python-solve-ax-b-using-gradient-descent
 def gradient_descent(A,b,x0,max_iters, gamma, tol):
     # initial guess vector x
-    next_x = x0*np.ones(A.shape[0]) 
+    next_x = x0
     # print initial f value 
     #print('i = 0 ; f(x)= '+str(f(A,b,next_x)))
     i=1
@@ -35,7 +35,7 @@ def gradient_descent(A,b,x0,max_iters, gamma, tol):
     else :
         print('No convergence for specified parameters.')
 
-    return next_x
+    return next_x, i
 
 def f(A,b,x):
     return 0.5*np.dot(np.dot(x,A),x)-np.dot(x,b)
@@ -46,13 +46,14 @@ def df(A,b,x):
 # ---------------------------------------------------------
 
 # file path
-file_name = "vem2.mtx"
+file_name = "spa1.mtx"
 file_path = f"/home/Cava/Documents/Repos/C#/Easy_Matrix/EasyMatrix/Matrixes/{file_name}"
 # r"C:\Users\Cava\Documents\REPOS\C#\Library Metodi del Calcolo Scientifico\EasyMatrix\Matrixes\spa1.mtx"
 
 # matrice A
-matrix = mmread(file_path)
+matrix = mmread(file_name)
 A = matrix.toarray()
+print(A)
 
 # vettore soluzioni b
 b = np.ones(A.shape[0])
@@ -63,7 +64,7 @@ x = np.zeros(A.shape[0])
 # gradient descent parameters
 gamma = 0.01          # step size multiplier
 tol = 1e-5            # convergence tolerance for stopping criterion
-max_iters = 1e6       # maximum number of iterations
+max_iters = 1e10       # maximum number of iterations
 
 # dimension of the problem
 n = 10
@@ -71,11 +72,11 @@ n = 10
 # Soluzione da libreria scipy che usa gauss-seidel
 # link al codice: https://github.com/scipy/scipy/blob/v1.14.0/scipy/sparse/linalg/_dsolve/linsolve.py#L144-L336 
 t0 = time.time()
-solution, num_iterations = gradient_descent(A, b, x0=x, tolerance=0.0000000001, max_iterations=50000, gamma=gamma)
+solution, num_iterations = gradient_descent(A, b, x0=x, tol=0.0000000001, max_iters=50000, gamma=gamma)
 t1 = time.time()
 total = t1-t0
 
-log_results(converge=True,tolerance=0.0000000001, iterations=num_iterations, time_spent=total, matrix_name=file_name, solver_type="GaussSeidelSolver")
+log_results(converge=True,tolerance=0.0000000001, iterations=num_iterations, time_spent=total, matrix_name=file_name, solver_type="GradientSolver")
 
 print("Solution:")
 for it in solution:
