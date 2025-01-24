@@ -100,7 +100,8 @@
               "ViewState": "AgIAACEAAAAAAAAAAAAYwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T14:04:15.668Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,7 +114,8 @@
               "ViewState": "AgIAAB0AAAAAAAAAAAAAwDgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T12:12:47.804Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -126,7 +128,8 @@
               "ViewState": "AgIAAFYAAAAAAAAAAAAYwGkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T20:48:39.611Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -152,7 +155,7 @@
               "RelativeDocumentMoniker": "EasyMatrix\\AccurateMatrix.cs",
               "ToolTip": "D:\\Repos\\c#\\Easy_Matrix\\EasyMatrix\\AccurateMatrix.cs",
               "RelativeToolTip": "EasyMatrix\\AccurateMatrix.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADIAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwDIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T20:56:47.659Z",
               "EditorCaption": ""
@@ -167,7 +170,8 @@
               "RelativeToolTip": "EasyMatrix\\AMatrix.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T20:48:53.225Z"
+              "WhenOpened": "2025-01-17T20:48:53.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -175,9 +179,10 @@
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AQIAAJoVAAAAAAAAAAAQwKsVAAAEAAAA",
+              "ViewState": "AgIAAJoVAAAAAAAAAAAQwKsVAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-09-13T20:43:12.133Z"
+              "WhenOpened": "2024-09-13T20:43:12.133Z",
+              "EditorCaption": ""
             }
           ]
         }
