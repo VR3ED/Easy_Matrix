@@ -15,7 +15,7 @@ namespace EasyMatrix
         /// <summary>
         /// static variable that memorizes r for each iteration
         /// </summary>
-        private static decimal[] AxMinusB;
+        private static decimal[] r;
 
         /// <summary>
         /// static variable that memorizes Ar for each iteration
@@ -37,7 +37,7 @@ namespace EasyMatrix
         /// <param name="maxIter">maximun number of iterations required</param>
         public GradientSolver(AccurateMatrix A, decimal[] b, decimal tol, int maxIter): base(A, b, tol, maxIter) 
         {
-            AxMinusB = (decimal[])b.Clone();
+            r = (decimal[])b.Clone();
             Ar = new decimal[A.rows];
             alpha = 0;
         }
@@ -54,14 +54,14 @@ namespace EasyMatrix
             if (i == 0)
             {
                 var Ax = MatrixVectorMultiply(x);
-                AxMinusB = VectorsSubtraction(b,Ax); //indichiamo b-Ax = r
+                r = VectorsSubtraction(b,Ax); //indichiamo b-Ax = r
 
                 // Calcolare Ar = A * (Ax-b)
-                Ar = MatrixVectorMultiply(AxMinusB);
+                Ar = MatrixVectorMultiply(r);
 
                 // Calcolare alpha = (r^T * r) / (r^T * A * r)
-                decimal rDotr = Dot(AxMinusB, AxMinusB);
-                decimal rDotAr = Dot(AxMinusB, Ar);
+                decimal rDotr = Dot(r, r);
+                decimal rDotAr = Dot(r, Ar);
 
                 // Evitare la divisione per zero
                 if (rDotAr == 0)
@@ -72,7 +72,7 @@ namespace EasyMatrix
                 alpha = rDotr / rDotAr;
             }
 
-            x[i] += alpha * AxMinusB[i];
+            x[i] += alpha * r[i];
 
             return x;
         }
