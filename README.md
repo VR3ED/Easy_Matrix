@@ -4,14 +4,12 @@ An easy to use library for scientific computing methods
 **EasyMatrix** is a C# library for working with matrices and solving linear systems using iterative methods.
 It provides implementations of common solvers such as **Jacobi**, **Gauss-Seidel**, **Gradient Method**, and **Conjugate Gradient**.
 
----
 
 ## Matrix files
 
 Matrices must be provided in `.mtx` (Matrix Market) format.
 Examples are available in the `Matrixes/` folder.
 
----
 
 ## Basic usage
 
@@ -43,7 +41,6 @@ decimal[] x = solver.Solve();
 Console.WriteLine("Solution computed!");
 ```
 
----
 
 ## Matrix properties
 
@@ -53,7 +50,6 @@ You can check if a matrix is **symmetric and positive definite**:
 Console.WriteLine("Is SPD: " + A.IsSymmetricPositiveDefinite());
 ```
 
----
 
 ## Available solvers
 
@@ -79,7 +75,6 @@ foreach (var tol in tolerances)
 }
 ```
 
----
 
 ## Running with multiple matrices
 
@@ -107,12 +102,10 @@ foreach (string matrixName in matrixFiles)
 }
 ```
 
----
 
 ## Requirements
 
 * .NET 6 or higher
 * Matrix files in `.mtx` format
 
----
 
