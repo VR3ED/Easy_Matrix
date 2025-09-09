@@ -4,6 +4,8 @@ An easy to use library for scientific computing methods
 **EasyMatrix** is a C# library for working with matrices and solving linear systems using iterative methods.
 It provides implementations of common solvers such as **Jacobi**, **Gauss-Seidel**, **Gradient Method**, and **Conjugate Gradient**.
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)]()
+
 
 ## Matrix files
 
